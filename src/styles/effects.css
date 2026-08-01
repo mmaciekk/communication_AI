@@ -1,0 +1,345 @@
+/* ============================================================== BACKDROP ==
+   Rendered once, outside AnimatePresence. Pure CSS so it never re-renders
+   and never competes with the slide transitions for main-thread time.      */
+
+.backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 90% 55% at 50% 78%, #3b0f5e 0%, transparent 62%),
+    radial-gradient(ellipse 120% 80% at 50% 8%, #1b0a3d 0%, transparent 70%),
+    linear-gradient(180deg, #07030f 0%, var(--vw-deep) 46%, #1d0733 74%, #2b0a3f 100%);
+}
+
+/* --- sun ---------------------------------------------------------------- */
+
+.backdrop__sun {
+  position: absolute;
+  left: 50%;
+  bottom: 26%;
+  width: min(52vw, 46vh * 2);
+  aspect-ratio: 1;
+  translate: -50% 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    var(--vw-sun-top) 0%,
+    var(--vw-sun-mid) 46%,
+    var(--vw-sun-bot) 100%
+  );
+  filter: blur(0.5px);
+  opacity: 0.85;
+  /* horizontal slats cut out of the lower half — the classic retro sun */
+  -webkit-mask-image: repeating-linear-gradient(
+    180deg,
+    #000 0 100%,
+    #000 var(--slat-start, 52%),
+    transparent var(--slat-start, 52%)
+  );
+  animation: sun-breathe 9s ease-in-out infinite;
+}
+
+.backdrop__sun::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent 0 calc(50% + 0px),
+    transparent calc(50% + 6px),
+    #0a0417 calc(50% + 6px) calc(50% + 12px),
+    transparent calc(50% + 12px) calc(50% + 26px),
+    #0a0417 calc(50% + 26px) calc(50% + 36px),
+    transparent calc(50% + 36px) calc(50% + 54px),
+    #0a0417 calc(50% + 54px) calc(50% + 68px),
+    transparent calc(50% + 68px) calc(50% + 90px),
+    #0a0417 calc(50% + 90px) calc(50% + 110px),
+    transparent calc(50% + 110px) 100%
+  );
+}
+
+.backdrop__sun-glow {
+  position: absolute;
+  left: 50%;
+  bottom: 20%;
+  width: min(70vw, 120vh);
+  aspect-ratio: 2 / 1;
+  translate: -50% 0;
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--vw-sun-mid) 45%, transparent) 0%,
+    transparent 68%
+  );
+  filter: blur(40px);
+  animation: sun-breathe 9s ease-in-out infinite;
+}
+
+@keyframes sun-breathe {
+  0%,
+  100% {
+    opacity: 0.78;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+/* --- horizon grid ------------------------------------------------------- */
+
+.backdrop__grid {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  bottom: -10%;
+  height: 62%;
+  transform: perspective(320px) rotateX(66deg);
+  transform-origin: 50% 100%;
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent 0 78px,
+      color-mix(in srgb, var(--vw-cyan) 55%, transparent) 78px 80px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 62px,
+      color-mix(in srgb, var(--vw-magenta) 48%, transparent) 62px 64px
+    );
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 100%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 26%, #000 100%);
+  animation: grid-scroll 2.6s linear infinite;
+  opacity: 0.55;
+}
+
+@keyframes grid-scroll {
+  from {
+    background-position:
+      0 0,
+      0 0;
+  }
+  to {
+    background-position:
+      0 0,
+      0 64px;
+  }
+}
+
+.backdrop__horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 26%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--vw-cyan), var(--vw-pink), transparent);
+  box-shadow:
+    0 0 22px var(--vw-cyan),
+    0 0 60px var(--vw-magenta);
+  opacity: 0.75;
+}
+
+/* --- stars -------------------------------------------------------------- */
+
+.backdrop__stars {
+  position: absolute;
+  inset: 0 0 40% 0;
+  background-image:
+    radial-gradient(1.4px 1.4px at 12% 22%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 28% 8%, #cfe9ff, transparent),
+    radial-gradient(1.6px 1.6px at 44% 34%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 61% 14%, #ffd7f5, transparent),
+    radial-gradient(1.5px 1.5px at 77% 28%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 88% 9%, #b9f6ff, transparent),
+    radial-gradient(1.3px 1.3px at 8% 44%, #fff, transparent),
+    radial-gradient(1.1px 1.1px at 35% 52%, #e9d5ff, transparent),
+    radial-gradient(1.4px 1.4px at 69% 47%, #fff, transparent),
+    radial-gradient(1.2px 1.2px at 94% 40%, #fff, transparent);
+  animation: twinkle 5.5s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.95;
+  }
+}
+
+/* --- overlays: scanlines + vignette + grain ----------------------------- */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+}
+
+.overlay__scanlines {
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.22) 0 1px,
+    transparent 1px 3px
+  );
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+}
+
+/* one slow bright band travelling down the screen, CRT refresh style */
+.overlay__sweep {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 22vh;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.045),
+    rgba(0, 240, 255, 0.05),
+    transparent
+  );
+  animation: sweep 7s linear infinite;
+}
+
+@keyframes sweep {
+  from {
+    top: -25vh;
+  }
+  to {
+    top: 105vh;
+  }
+}
+
+.overlay__vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 52%, rgba(3, 0, 10, 0.72) 100%);
+}
+
+/* ============================================================ TEXT EFFECT ==  */
+
+/* chrome / metallic gradient headline */
+.fx-chrome {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    var(--vw-chrome-lo) 32%,
+    #f8f0ff 47%,
+    var(--vw-pink) 62%,
+    var(--vw-violet) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.45))
+    drop-shadow(0 0 26px color-mix(in srgb, var(--vw-magenta) 55%, transparent));
+}
+
+/* neon outline headline */
+.fx-neon {
+  color: var(--vw-ink);
+  text-shadow:
+    0 0 6px var(--accent),
+    0 0 22px var(--accent),
+    0 0 48px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+
+/* persistent RGB fringe on a headline — subtle, always on */
+.fx-fringe {
+  position: relative;
+}
+
+.fx-fringe::before,
+.fx-fringe::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.fx-fringe::before {
+  color: var(--vw-magenta);
+  translate: -2px 0;
+  mix-blend-mode: screen;
+  opacity: 0.55;
+}
+
+.fx-fringe::after {
+  color: var(--vw-cyan);
+  translate: 2px 0;
+  mix-blend-mode: screen;
+  opacity: 0.55;
+}
+
+/* flicker, for the title slide */
+.fx-flicker {
+  animation: flicker 6s steps(1, end) infinite;
+}
+
+@keyframes flicker {
+  0%,
+  93%,
+  100% {
+    opacity: 1;
+  }
+  94% {
+    opacity: 0.42;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0.6;
+  }
+  97% {
+    opacity: 1;
+  }
+}
+
+/* frame corners on section slides */
+.fx-frame::before,
+.fx-frame::after {
+  content: '';
+  position: absolute;
+  width: clamp(2rem, 5vw, 5rem);
+  height: clamp(2rem, 5vw, 5rem);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 18px var(--accent);
+  opacity: 0.85;
+}
+
+.fx-frame::before {
+  top: calc(var(--pad-y) * 0.6);
+  left: calc(var(--pad-x) * 0.4);
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.fx-frame::after {
+  bottom: calc(var(--pad-y) * 0.6);
+  right: calc(var(--pad-x) * 0.4);
+  border-left: 0;
+  border-top: 0;
+}
+
+/* big translucent section numeral */
+.fx-numeral {
+  position: absolute;
+  right: calc(var(--pad-x) * 0.5);
+  top: 50%;
+  translate: 0 -50%;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(9rem, 34vw, 32rem);
+  line-height: 0.8;
+  color: transparent;
+  -webkit-text-stroke: 2px color-mix(in srgb, var(--accent) 40%, transparent);
+  opacity: 0.28;
+  pointer-events: none;
+  user-select: none;
+}

@@ -1,0 +1,18 @@
+[project]
+name = "voice"
+version = "0.1.0"
+description = "Narracja slajdów głosem prelegenta (XTTS-v2, lokalnie)"
+# coqui-tts najstabilniej działa na 3.11; uv samo ją pobierze.
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    # extra `codec` = torchcodec, wymagany do audio IO od torcha 2.9
+    "coqui-tts[codec]>=0.25.1",
+    # coqui-tts nie ciągnie torcha sam — trzeba go podać jawnie.
+    "torch>=2.2",
+    "torchaudio>=2.2",
+    # transformers 5.x usunęło isin_mps_friendly, którego używa warstwa tortoise
+    # w coqui-tts.
+    "transformers>=4.46,<5",
+    "numpy",
+    "soundfile",
+]

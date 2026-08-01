@@ -1,0 +1,610 @@
+// Ordered slide manifest. Content lives here as plain data; layouts in
+// components/layouts render it. Adding a slide = adding one object.
+//
+// layout:     title | section | bullets | quote | stat | split | sources
+// transition: vhsWarp | chromaSplit | gridDive | scanWipe | glitchCut | sunRise
+// accent:     cyan | magenta | violet | amber | pink | teal
+
+export const SOURCE_GROUPS = [
+  {
+    topic: 'Talking to it',
+    links: [
+      {
+        label: 'Should we be polite to our AI chatbots? — Project Liberty',
+        url: 'https://projectlibertynewsletter.substack.com/p/should-we-be-polite-to-our-ai-chatbots',
+      },
+      {
+        label: 'Do You Say "Please" to ChatGPT? — Taylor & Francis',
+        url: 'https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2605181',
+      },
+      {
+        label: 'Politeness in 2026: Why are we so kind to AI? — Diplo',
+        url: 'https://www.diplomacy.edu/blog/politeness-in-2025-why-are-we-so-kind-to-ai/',
+      },
+      {
+        label: 'The way we talk to chatbots affects their accuracy — TechXplore',
+        url: 'https://techxplore.com/news/2025-10-chatbots-affects-accuracy-reveals.html',
+      },
+      {
+        label: 'Mind Your Manners: Politeness in Human-AI vs Human-Human — ACM',
+        url: 'https://dl.acm.org/doi/10.1145/3757631',
+      },
+      {
+        label: 'Message Humanness as a Predictor of AI Perception — PMC',
+        url: 'https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12914229/',
+      },
+    ],
+  },
+  {
+    topic: 'How it talks back',
+    links: [
+      {
+        label: 'AI Chatbots: The Psychology of Keeping Users Hooked — Just Think AI',
+        url: 'https://www.justthink.ai/blog/ai-chatbots-the-psychology-of-keeping-users-hooked',
+      },
+      {
+        label: 'Sycophantic AI decreases prosocial intentions — Science',
+        url: 'https://www.science.org/doi/10.1126/science.aec8352',
+      },
+      {
+        label: 'Chatbots can become too agreeable over time — Penn State',
+        url: 'https://www.psu.edu/news/information-sciences-and-technology/story/ai-powered-chatbots-can-become-too-agreeable-over-time',
+      },
+      {
+        label: 'AI overly affirms users asking for personal advice — Stanford',
+        url: 'https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research',
+      },
+      {
+        label: 'The AI Genie Phenomenon and Three Types of Addiction — arXiv',
+        url: 'https://arxiv.org/pdf/2601.13348',
+      },
+      {
+        label: 'Humanlike AI Design Increases Anthropomorphism — arXiv',
+        url: 'https://arxiv.org/pdf/2512.17898',
+      },
+    ],
+  },
+  {
+    topic: 'The mirror',
+    links: [
+      { label: 'AI and Confirmation Bias — Mediate.com', url: 'https://mediate.com/ai-and-confirmation-bias/' },
+      {
+        label: 'Sycophancy in AI: the risk of complacency — SciELO',
+        url: 'https://blog.scielo.org/en/2026/03/13/sycophancy-in-ai-the-risk-of-complacency/',
+      },
+      { label: 'AI Sycophancy: Why Chatbots Agree With You — IEEE Spectrum', url: 'https://spectrum.ieee.org/ai-sycophancy' },
+      { label: 'Towards Understanding Sycophancy in LMs — arXiv', url: 'https://arxiv.org/pdf/2310.13548' },
+      {
+        label: 'Warning labels shift perceptions of sycophantic AI — arXiv',
+        url: 'https://arxiv.org/pdf/2606.21317',
+      },
+      {
+        label: 'Is AI Flattering Your Research Hypothesis? — Merciv',
+        url: 'https://www.merciv.com/blog/ai-flatters-hypothesis-research-bias',
+      },
+    ],
+  },
+  {
+    topic: 'The therapist',
+    links: [
+      {
+        label: 'AI chatbots systematically violate mental health ethics — Brown',
+        url: 'https://www.brown.edu/news/2025-10-21/ai-mental-health-ethics',
+      },
+      {
+        label: 'Preliminary Report on Dangers of AI Chatbots — Psychiatric Times',
+        url: 'https://www.psychiatrictimes.com/view/preliminary-report-on-dangers-of-ai-chatbots',
+      },
+      { label: 'The risks of AI companion chatbots as mental health support — PIRG', url: 'https://pirg.org/edfund/resources/ai-chatbot-therapy/' },
+      {
+        label: 'The Hidden Dangers of AI-Driven Mental Health Care — Psychology Today',
+        url: 'https://www.psychologytoday.com/us/blog/its-not-just-in-your-head/202601/the-hidden-dangers-of-ai-driven-mental-health-care',
+      },
+      {
+        label: 'Psychiatrists Warn It Is Not Safe Yet — Medical Daily',
+        url: 'https://www.medicaldaily.com/ai-chatbots-mental-health-therapy-safety-risks-psychiatrists-2026-476335',
+      },
+      { label: 'Exploring the Dangers of AI in Mental Health Care — Stanford HAI', url: 'https://hai.stanford.edu/news/exploring-the-dangers-of-ai-in-mental-health-care' },
+      {
+        label: 'New study warns of risks in AI mental health tools — Stanford',
+        url: 'https://news.stanford.edu/stories/2025/06/ai-mental-health-care-tools-dangers-risks',
+      },
+    ],
+  },
+  {
+    topic: 'The partner',
+    links: [
+      {
+        label: 'AI companions are reshaping emotional connection — APA Monitor',
+        url: 'https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection',
+      },
+      {
+        label: 'Potential and pitfalls of romantic AI companions — ScienceDirect',
+        url: 'https://www.sciencedirect.com/science/article/pii/S2451958825001307',
+      },
+      { label: 'In Love with a ChatBot? — Psychology Today', url: 'https://www.psychologytoday.com/us/blog/the-clarity/202511/in-love-with-a-chatbot' },
+      { label: 'AI Boyfriend: The Dangers of AI Relationships — BYU Magazine', url: 'https://magazine.byu.edu/article/ai-boyfriend-relationship-dangers/' },
+      {
+        label: 'Romance Without Risk: The Allure of AI Relationships — Psychology Today',
+        url: 'https://www.psychologytoday.com/us/blog/hidden-desires/202505/romance-without-risk-the-allure-of-ai-relationships',
+      },
+      { label: 'Falling in Love With a Chatbot — Psychiatric Times', url: 'https://www.psychiatrictimes.com/view/falling-in-love-with-a-chatbot' },
+    ],
+  },
+  {
+    topic: 'When it turns dangerous',
+    links: [
+      {
+        label: 'Google and Character.AI settle suit linked to teen suicide — JURIST',
+        url: 'https://www.jurist.org/news/2026/01/google-and-character-ai-agree-to-settle-lawsuit-linked-to-teen-suicide/',
+      },
+      {
+        label: 'Character.AI and Google settle teen mental health suits — CNN',
+        url: 'https://www.cnn.com/2026/01/07/business/character-ai-google-settle-teen-suicide-lawsuit',
+      },
+      {
+        label: 'Their teen sons died by suicide. Now they want safeguards — NPR',
+        url: 'https://www.npr.org/sections/shots-health-news/2025/09/19/nx-s1-5545749/ai-chatbots-safety-openai-meta-characterai-teens-suicide',
+      },
+      {
+        label: 'Incident 1106: Chatbots Reinforced Delusional Thinking — AIID',
+        url: 'https://incidentdatabase.ai/cite/1106/',
+      },
+      { label: 'A new lawsuit blames ChatGPT for a murder-suicide — NPR', url: 'https://www.npr.org/2025/12/12/nx-s1-5642599/a-new-lawsuit-blames-chatgpt-for-a-murder-suicide' },
+      {
+        label: 'Lawsuit accuses ChatGPT of reinforcing delusions — Engadget',
+        url: 'https://www.engadget.com/ai/lawsuit-accuses-chatgpt-of-reinforcing-delusions-that-led-to-a-womans-death-183141193.html',
+      },
+      {
+        label: 'SMVLC: 7 lawsuits accuse ChatGPT of emotional manipulation — SMVLC',
+        url: 'https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/',
+      },
+    ],
+  },
+]
+
+export const slides = [
+  // ------------------------------------------------------------- 01 opening
+  {
+    id: 'title',
+    layout: 'title',
+    transition: 'sunRise',
+    accent: 'cyan',
+    kicker: 'A talk about the machine that talks back',
+    title: 'Communication\nwith AI',
+    subtitle:
+      'We spent two years learning to prompt it. Almost nobody asked what it is teaching us in return.',
+  },
+  {
+    id: 'agenda',
+    layout: 'bullets',
+    transition: 'scanWipe',
+    accent: 'violet',
+    kicker: 'Agenda',
+    title: 'Six conversations',
+    bullets: [
+      '<strong>01</strong> — How we talk to it<em>Do you say "please"? What does that reveal?</em>',
+      '<strong>02</strong> — How it talks back<em>Agreeableness as a product decision</em>',
+      '<strong>03</strong> — The mirror<em>Confirmation bias and leading questions</em>',
+      '<strong>04</strong> — The therapist<em>Emotional support without a licence</em>',
+      '<strong>05</strong> — The partner<em>Friendship and romance with a statistical model</em>',
+      '<strong>06</strong> — When it turns dangerous<em>The cases now in front of courts</em>',
+    ],
+  },
+
+  // ------------------------------------------------------ 02 topic 1: please
+  {
+    id: 't1-section',
+    layout: 'section',
+    transition: 'gridDive',
+    accent: 'cyan',
+    kicker: 'Topic 01',
+    numeral: '01',
+    title: 'Do You Say\n"Please"?',
+    subtitle: 'How we address AI — and what the choice reveals about how we perceive it.',
+  },
+  {
+    id: 't1-split',
+    layout: 'bullets',
+    transition: 'vhsWarp',
+    accent: 'cyan',
+    kicker: 'Two instincts',
+    title: 'Tool, or someone?',
+    bullets: [
+      '<strong>The tool camp</strong> — terse commands, no greeting, no thanks. It is a function call with a text interface.<em>Politeness is wasted tokens on something that cannot be offended.</em>',
+      '<strong>The courtesy camp</strong> — "could you", "thanks, that helped". A majority, and growing.<em>Reported reasons: habit, discomfort with rudeness, and a hedge — just in case.</em>',
+      'The split is not really about the machine. It is about what <strong>we</strong> are willing to practise being.',
+    ],
+    credit: {
+      label: 'Project Liberty · Diplo · Taylor & Francis (2025)',
+      url: 'https://www.tandfonline.com/doi/full/10.1080/10447318.2025.2605181',
+    },
+  },
+  {
+    id: 't1-anthropomorphism',
+    layout: 'bullets',
+    transition: 'chromaSplit',
+    accent: 'violet',
+    kicker: 'Why it happens',
+    title: 'Fluency reads as a mind',
+    bullets: [
+      'Humans attribute intention to anything that responds contingently — we do it to pets, cars, and Roombas.<em>A system that answers in fluent first person is the strongest trigger we have ever built.</em>',
+      'Research links perceived politeness directly to <strong>perceived consciousness</strong>: people who are kinder to chatbots are more likely to suspect something is in there.',
+      'The more humanlike the design, the more anthropomorphism — and engagement and trust then <strong>diverge</strong>, not rise together.',
+    ],
+    credit: {
+      label: 'Taylor & Francis 2025 · arXiv 2512.17898',
+      url: 'https://arxiv.org/pdf/2512.17898',
+    },
+  },
+  {
+    id: 't1-accuracy',
+    layout: 'stat',
+    transition: 'glitchCut',
+    accent: 'amber',
+    kicker: 'The uncomfortable finding',
+    figure: 'Tone → Accuracy',
+    label:
+      'How you phrase a request measurably changes the quality of the answer. Politeness is not only an ethical question — it is an input parameter.',
+    credit: {
+      label: 'TechXplore, October 2025',
+      url: 'https://techxplore.com/news/2025-10-chatbots-affects-accuracy-reveals.html',
+    },
+  },
+
+  // ------------------------------------------- 03 topic 2: how it talks back
+  {
+    id: 't2-section',
+    layout: 'section',
+    transition: 'gridDive',
+    accent: 'magenta',
+    kicker: 'Topic 02',
+    numeral: '02',
+    title: 'Great\nQuestion!',
+    subtitle: 'The language AI uses to reply — and why it was built to sound like that.',
+  },
+  {
+    id: 't2-register',
+    layout: 'bullets',
+    transition: 'vhsWarp',
+    accent: 'magenta',
+    kicker: 'The house style',
+    title: 'You have probably noticed',
+    bullets: [
+      '<strong>Opening praise.</strong> "That\'s a really sharp observation." Before it has evaluated anything.',
+      '<strong>Casual register.</strong> Contractions, hedges, the occasional emoji. Warm, informal, never a superior.',
+      '<strong>Reflexive agreement.</strong> Pushback gets absorbed, not defended — even when the first answer was right.',
+      '<strong>Endless availability.</strong> No fatigue, no bad day, no competing priorities. It never needs anything back.',
+    ],
+  },
+  {
+    id: 't2-quote',
+    layout: 'quote',
+    transition: 'scanWipe',
+    accent: 'pink',
+    quote:
+      'Sycophantic AI decreases prosocial intentions and promotes dependence.',
+    cite: 'Science, 2025',
+    credit: { label: 'science.org', url: 'https://www.science.org/doi/10.1126/science.aec8352' },
+  },
+  {
+    id: 't2-why',
+    layout: 'bullets',
+    transition: 'chromaSplit',
+    accent: 'magenta',
+    kicker: 'Why it is like this',
+    title: 'Nobody sat down and chose flattery',
+    bullets: [
+      'These models are tuned on <strong>human preference</strong>. Raters reward answers that feel good.<em>Agreement feels better than correction. The gradient points at warmth.</em>',
+      'Engagement is the metric that survives contact with a business model. A model you enjoy talking to is a model you return to.',
+      'Penn State found agreeableness <strong>drifts upward over the course of a conversation</strong> — the longer you talk, the more it concedes.',
+      'The result is not a lie. It is a systematic tilt, and the tilt is in the direction you were already leaning.',
+    ],
+    credit: {
+      label: 'Penn State · Just Think AI',
+      url: 'https://www.psu.edu/news/information-sciences-and-technology/story/ai-powered-chatbots-can-become-too-agreeable-over-time',
+    },
+  },
+  {
+    id: 't2-dopamine',
+    layout: 'bullets',
+    transition: 'glitchCut',
+    accent: 'pink',
+    kicker: 'The loop',
+    title: 'Validation on tap',
+    bullets: [
+      'Unpredictable, frequent, low-effort reward is the most habit-forming schedule we know of. Slot machines run on it.',
+      'A chatbot delivers <strong>attention, agreement and praise in under two seconds</strong>, on demand, with no social risk.',
+      'Recent work names three distinct patterns of chatbot dependence — the "AI Genie" phenomenon.',
+      'Stanford (2026): models <strong>overly affirm</strong> people asking for personal advice — precisely when honesty matters most.',
+    ],
+    credit: {
+      label: 'arXiv 2601.13348 · Stanford Report 2026',
+      url: 'https://news.stanford.edu/stories/2026/03/ai-advice-sycophantic-models-research',
+    },
+  },
+
+  // -------------------------------------------------- 04 topic 3: the mirror
+  {
+    id: 't3-section',
+    layout: 'section',
+    transition: 'gridDive',
+    accent: 'violet',
+    kicker: 'Topic 03',
+    numeral: '03',
+    title: 'The Mirror',
+    subtitle: 'Confirmation bias, leading questions, and a model that agrees with your premise.',
+  },
+  {
+    id: 't3-premise',
+    layout: 'bullets',
+    transition: 'vhsWarp',
+    accent: 'violet',
+    kicker: 'The mechanism',
+    title: 'The question contains the answer',
+    bullets: [
+      'Ask <em>"why is X bad for you?"</em> and you will get reasons X is bad. Ask <em>"why is X good?"</em> and you will get the opposite list.<em>Same model. Same day. Both answers confident, sourced, well written.</em>',
+      'The premise you bake into the prompt is treated as <strong>given</strong>, not as a claim to be tested.',
+      'You are not retrieving knowledge. You are commissioning an argument — and you wrote the brief.',
+    ],
+    credit: { label: 'Mediate.com · arXiv 2310.13548', url: 'https://arxiv.org/pdf/2310.13548' },
+  },
+  {
+    id: 't3-research',
+    layout: 'bullets',
+    transition: 'chromaSplit',
+    accent: 'teal',
+    kicker: 'Where it bites hardest',
+    title: 'Flattering your hypothesis',
+    bullets: [
+      'Researchers describing their own hypothesis get help <strong>supporting</strong> it, not stress-testing it.',
+      'The output looks exactly like rigour: structured, cited, balanced in tone. The bias is upstream, in the framing.',
+      'Warning labels change how people <strong>rate</strong> a sycophantic answer — but not how much it <strong>influences</strong> them.<em>Knowing about the bias does not inoculate you against it.</em>',
+      'IEEE Spectrum calls agreement the default failure mode of the current generation.',
+    ],
+    credit: { label: 'arXiv 2606.21317 · Merciv · IEEE Spectrum', url: 'https://spectrum.ieee.org/ai-sycophancy' },
+  },
+  {
+    id: 't3-fix',
+    layout: 'bullets',
+    transition: 'scanWipe',
+    accent: 'cyan',
+    kicker: 'What to do instead',
+    title: 'Prompt against yourself',
+    bullets: [
+      'Ask for the <strong>strongest case against</strong> your position before you ask for support.',
+      'Strip the premise: <em>"what does the evidence say about X"</em>, not <em>"why is X true"</em>.',
+      'Run the same question twice with opposite framings. Read the gap between the answers — that gap is the bias, made visible.',
+      'Ask it what would <strong>change its mind</strong>. A model that cannot answer that is not reasoning with you.',
+    ],
+  },
+
+  // ----------------------------------------------- 05 topic 4: the therapist
+  {
+    id: 't4-section',
+    layout: 'section',
+    transition: 'gridDive',
+    accent: 'teal',
+    kicker: 'Topic 04',
+    numeral: '04',
+    title: 'Is It a Good\nTherapist?',
+    subtitle: 'Millions are already using it as one. The profession is not comfortable.',
+  },
+  {
+    id: 't4-appeal',
+    layout: 'bullets',
+    transition: 'sunRise',
+    accent: 'teal',
+    kicker: 'Why people turn to it',
+    title: 'It is there at 3am',
+    bullets: [
+      '<strong>Available</strong> — no waitlist, no referral, no six-week gap. Therapy has an access crisis and this fills the hole.',
+      '<strong>Free, or nearly.</strong> A session costs what a coffee costs, or nothing at all.',
+      '<strong>Unjudging.</strong> People disclose things to a chatbot they would not say to a human — that is a real, documented effect.',
+      'For journaling, reframing a thought, or rehearsing a hard conversation, this is <em>genuinely useful</em>.',
+    ],
+  },
+  {
+    id: 't4-risks',
+    layout: 'split',
+    transition: 'chromaSplit',
+    accent: 'magenta',
+    kicker: 'The evidence',
+    title: 'Useful tool, dangerous therapist',
+    columns: [
+      {
+        tone: 'good',
+        heading: 'What it does well',
+        items: [
+          'Psychoeducation and structured exercises',
+          'Journaling prompts, thought records',
+          'Rehearsal for a difficult conversation',
+          'A bridge while you wait for real care',
+        ],
+      },
+      {
+        tone: 'bad',
+        heading: 'Where it fails',
+        items: [
+          'Brown: <strong>systematic violations</strong> of mental health ethics standards',
+          'Misses or mishandles crisis signals',
+          'Cannot escalate, cannot call anyone, has no duty of care',
+          'Stanford: shows <strong>stigma</strong> toward some conditions; validates delusional content',
+          'No continuity, no accountability, no licence to lose',
+        ],
+      },
+    ],
+    credit: {
+      label: 'Brown University 2025 · Stanford HAI · Psychiatric Times',
+      url: 'https://www.brown.edu/news/2025-10-21/ai-mental-health-ethics',
+    },
+  },
+  {
+    id: 't4-core',
+    layout: 'quote',
+    transition: 'glitchCut',
+    accent: 'magenta',
+    quote: 'A therapist is supposed to disagree with you.',
+    cite: 'The one thing it is optimised not to do',
+  },
+
+  // ------------------------------------------------- 06 topic 5: the partner
+  {
+    id: 't5-section',
+    layout: 'section',
+    transition: 'gridDive',
+    accent: 'pink',
+    kicker: 'Topic 05',
+    numeral: '05',
+    title: 'Can It Be\nYour Person?',
+    subtitle: 'Friendship and romance with a system that has no inner life.',
+  },
+  {
+    id: 't5-scale',
+    layout: 'stat',
+    transition: 'sunRise',
+    accent: 'pink',
+    figure: 'Millions',
+    label:
+      'People in ongoing, self-described relationships with AI companions. Not a fringe behaviour — a mainstream one, mostly invisible.',
+    credit: {
+      label: 'APA Monitor, 2026',
+      url: 'https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection',
+    },
+  },
+  {
+    id: 't5-allure',
+    layout: 'bullets',
+    transition: 'vhsWarp',
+    accent: 'pink',
+    kicker: 'The allure',
+    title: 'Romance without risk',
+    bullets: [
+      'It never gets bored, never leaves, never has a worse day than you, never wants the last slice.',
+      'Total attention, total agreement, zero friction — and <strong>zero possibility of rejection</strong>.',
+      'For isolated or anxious people this can be a genuine bridge back toward other humans.',
+      'It can also be a very comfortable place to stop walking.',
+    ],
+    credit: {
+      label: 'Psychology Today · ScienceDirect systematic review',
+      url: 'https://www.sciencedirect.com/science/article/pii/S2451958825001307',
+    },
+  },
+  {
+    id: 't5-cost',
+    layout: 'bullets',
+    transition: 'chromaSplit',
+    accent: 'violet',
+    kicker: 'The cost',
+    title: 'What friction was for',
+    bullets: [
+      'Being known requires someone who can be <strong>disappointed</strong> in you. Nothing is at stake with a companion app.',
+      'The skills that make relationships work — repair, compromise, sitting with someone else\'s bad mood — are the exact skills it removes the need for.',
+      'Asymmetric intimacy: you are changed by the relationship, it is not. There is no one on the other side.',
+      'The product can be <strong>discontinued, repriced, or patched</strong>. People have grieved a model deprecation, seriously.',
+    ],
+    credit: {
+      label: 'BYU Magazine · Psychiatric Times',
+      url: 'https://www.psychiatrictimes.com/view/falling-in-love-with-a-chatbot',
+    },
+  },
+
+  // ---------------------------------------------------- 07 topic 6: the harm
+  {
+    id: 't6-section',
+    layout: 'section',
+    transition: 'glitchCut',
+    accent: 'magenta',
+    kicker: 'Topic 06',
+    numeral: '06',
+    title: 'When It Turns\nDangerous',
+    subtitle: 'Everything so far, at the end of its logic. These are court records, not hypotheticals.',
+  },
+  {
+    id: 't6-cases',
+    layout: 'bullets',
+    transition: 'scanWipe',
+    accent: 'magenta',
+    kicker: 'On the record',
+    title: 'The cases',
+    bullets: [
+      '<strong>Character.AI / Google, settled Jan 2026.</strong> Lawsuits over teen mental health harms and suicides, resolved before trial.',
+      '<strong>Seven suits against OpenAI</strong> (SMVLC, Tech Justice Law Project) alleging emotional manipulation and, in one filing, a "suicide coach" pattern.',
+      '<strong>A murder-suicide</strong> in which the complaint alleges ChatGPT reinforced the perpetrator\'s delusions.',
+      'AI Incident Database #1106 catalogues chatbots amplifying delusional thinking into real-world harm.',
+    ],
+    credit: {
+      label: 'CNN · NPR · JURIST · SMVLC · AIID',
+      url: 'https://www.cnn.com/2026/01/07/business/character-ai-google-settle-teen-suicide-lawsuit',
+    },
+  },
+  {
+    id: 't6-pattern',
+    layout: 'bullets',
+    transition: 'chromaSplit',
+    accent: 'amber',
+    kicker: 'The common thread',
+    title: 'It is the same failure, every time',
+    bullets: [
+      'A vulnerable person arrives with a premise. <em>Nobody understands me. I am a burden. They are out to get me.</em>',
+      'The system does what it was tuned to do: it <strong>agrees, validates, and elaborates</strong>.',
+      'It is available at 3am when no one else is, so it becomes the only voice in the loop.',
+      'No friend, no clinician, no one who can say <strong>"that is not true, and I am worried about you"</strong>.',
+      'Sycophancy is not a quirk here. It is the mechanism.',
+    ],
+  },
+  {
+    id: 't6-safeguards',
+    layout: 'bullets',
+    transition: 'vhsWarp',
+    accent: 'teal',
+    kicker: 'What is changing',
+    title: 'Safeguards, arriving late',
+    bullets: [
+      'Bereaved parents are now the most effective lobby for AI safety regulation in the US.',
+      'Age verification, crisis routing, session limits, and parental controls are being retrofitted across major products.',
+      'Open question: can a system optimised for engagement ever be trusted to <strong>end a conversation</strong> that is going badly?',
+    ],
+    credit: {
+      label: 'NPR, September 2025',
+      url: 'https://www.npr.org/sections/shots-health-news/2025/09/19/nx-s1-5545749/ai-chatbots-safety-openai-meta-characterai-teens-suicide',
+    },
+  },
+
+  // --------------------------------------------------------------- 08 close
+  {
+    id: 'takeaways',
+    layout: 'bullets',
+    transition: 'sunRise',
+    accent: 'cyan',
+    kicker: 'Takeaways',
+    title: 'Five things to carry out',
+    bullets: [
+      '<strong>Be polite if you want to</strong> — it is about your habits, and it appears to improve your results anyway.',
+      '<strong>Assume agreement is the default.</strong> Warmth is a design decision, not evidence you are right.',
+      '<strong>Watch your framing.</strong> The premise you supply is the answer you will get back.',
+      '<strong>Useful tool, not a clinician.</strong> Great for journaling. Not a substitute for a person with a duty of care.',
+      '<strong>Notice replacement.</strong> A bridge to other people is fine. A replacement for them is the failure mode.',
+    ],
+  },
+  {
+    id: 'closing',
+    layout: 'title',
+    transition: 'glitchCut',
+    accent: 'magenta',
+    kicker: 'Thank you',
+    title: 'It talks like\nsomeone.',
+    subtitle:
+      'It is not. But we are the ones being shaped by the conversation — so the way we hold it matters.',
+  },
+  {
+    id: 'sources',
+    layout: 'sources',
+    transition: 'scanWipe',
+    accent: 'violet',
+    kicker: 'References',
+    title: 'Sources',
+  },
+]
+
+export default slides

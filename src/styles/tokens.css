@@ -1,0 +1,76 @@
+:root {
+  /* --- vaporwave palette --- */
+  --vw-void: #0a0417;
+  --vw-deep: #14082b;
+  --vw-plum: #2a1152;
+  --vw-magenta: #ff2e97;
+  --vw-pink: #ff6ec7;
+  --vw-cyan: #00f0ff;
+  --vw-teal: #2de2e6;
+  --vw-violet: #b967ff;
+  --vw-amber: #ffb238;
+  --vw-sun-top: #ffd319;
+  --vw-sun-mid: #ff2975;
+  --vw-sun-bot: #8c1eff;
+  --vw-chrome-hi: #ffffff;
+  --vw-chrome-lo: #9ad7ff;
+
+  --vw-ink: #f4ecff;
+  --vw-ink-dim: #b9a8d8;
+  --vw-ink-faint: #7c6a9c;
+
+  /* accent slots, remapped per-slide via [data-accent] */
+  --accent: var(--vw-cyan);
+  --accent-2: var(--vw-magenta);
+
+  /* --- type --- */
+  /* Chakra Petch, not Orbitron: Orbitron ships latin-only and has no Polish
+     diacritics (ą ć ę ł ń ó ś ź ż). Max weight here is 700, not 900. */
+  --font-display: 'Chakra Petch', 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'VT323', ui-monospace, 'SF Mono', monospace;
+
+  /* fluid sizes — deck must read on a laptop and a projector */
+  --fs-mega: clamp(2.75rem, 8.5vw, 8rem);
+  --fs-title: clamp(2rem, 5.5vw, 5rem);
+  --fs-head: clamp(1.5rem, 3.4vw, 3rem);
+  --fs-body: clamp(1rem, 1.7vw, 1.6rem);
+  --fs-small: clamp(0.8rem, 1.05vw, 1rem);
+  --fs-tiny: clamp(0.68rem, 0.85vw, 0.85rem);
+
+  /* --- motion --- */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-snap: cubic-bezier(0.85, 0, 0.15, 1);
+
+  /* --- layout --- */
+  --pad-x: clamp(2rem, 7vw, 9rem);
+  --pad-y: clamp(2rem, 6vh, 5rem);
+
+  --glow-accent: 0 0 8px var(--accent), 0 0 28px color-mix(in srgb, var(--accent) 55%, transparent);
+}
+
+[data-accent='cyan'] {
+  --accent: var(--vw-cyan);
+  --accent-2: var(--vw-magenta);
+}
+[data-accent='magenta'] {
+  --accent: var(--vw-magenta);
+  --accent-2: var(--vw-cyan);
+}
+[data-accent='violet'] {
+  --accent: var(--vw-violet);
+  --accent-2: var(--vw-teal);
+}
+[data-accent='amber'] {
+  --accent: var(--vw-amber);
+  --accent-2: var(--vw-pink);
+}
+[data-accent='pink'] {
+  --accent: var(--vw-pink);
+  --accent-2: var(--vw-teal);
+}
+[data-accent='teal'] {
+  --accent: var(--vw-teal);
+  --accent-2: var(--vw-violet);
+}
