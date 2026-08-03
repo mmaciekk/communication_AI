@@ -49,4 +49,38 @@
 
 ## Notes
 
-- 
+### Weryfikacja źródeł (sierpień 2026) — rozjazdy między tezą a linkiem
+
+Przy przepisywaniu prezentacji na polski każde twierdzenie ze slajdów i z `mowa.md`
+zostało zestawione ze źródłem. Trzy rzeczy się nie zgadzały:
+
+1. **„Uprzejmość wymiernie poprawia jakość odpowiedzi” (slajd „Ton → Trafność”)** —
+   powoływało się na TechXplore. Źródło opisuje badanie Amazona (Fulei Zhang, Zhou Yu)
+   o czymś innym: ludzie są o 14,5% bardziej uprzejmi wobec ludzi niż wobec AI, trening
+   na zróżnicowanych stylach daje +2,9% rozumienia intencji, a **normalizowanie tonu
+   na wejściu pogarsza wynik o ~2%**. Dodatkowo Penn State (za Project Liberty) na
+   50 pytaniach do GPT-4o dostało wynik odwrotny do tezy: szorstki ton wypadł lepiej.
+   → Slajd napisany od nowa jako „Nie wiadomo”; poprawiony też pierwszy punkt
+   „Pięciu rzeczy”.
+2. **„Science, 2025”** — poprawna atrybucja to Cheng, Lee, Khadpe, Yu, Han, Jurafsky,
+   *Science* 391(6792), eaec8352, **26 marca 2026** (preprint arXiv 2510.01395, X 2025).
+   Liczby, które warto podawać: 11 modeli, potwierdzanie działań użytkownika **o 49%
+   częściej niż u ludzi**, N = 2405.
+3. **„Miliony ludzi w trwałych relacjach z AI, które sami nazywają związkami”** —
+   nie znalazłem tego w żadnym z linków. Zastąpione danymi z APA Monitor 2026:
+   20 mln użytkowników miesięcznie Character.AI (ponad połowa poniżej 24 lat),
+   wzrost aplikacji-towarzyszy o 700% (2022 → poł. 2025), blisko 1 na 5 studentów
+   w ankiecie z X 2025.
+
+Doprecyzowane fakty w sprawach sądowych: ugoda Google/Character.AI **8.01.2026**
+(Megan Garcia, Sewell Setzer, 14 lat; co najmniej 4 sprawy: FL, CO, NY, TX; warunków
+nie ujawniono); 7 pozwów SMVLC złożonych **6.11.2025** w Kalifornii (GPT-4o, czterech
+zmarłych, troje ocalałych); sprawa Soelberg/Adams z **sierpnia 2025**.
+
+Dodane źródło spoza pierwotnej listy: sondaż YouGov (12 000 użytkowników, 17 krajów,
+VI–VII 2025) — 43% mówi AI „proszę”, w USA 67%, a wśród nich 18% „na wszelki wypadek”.
+
+Nie udało się pobrać bezpośrednio (403/451): science.org, ScienceDirect, ACM,
+tandfonline, diplomacy.edu, CNN, NPR — potwierdzone przez PubMed, JURIST, DOAJ/SMU,
+Engadget i wyszukiwarkę.
+

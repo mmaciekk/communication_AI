@@ -4,10 +4,10 @@
  * (src/Deck.jsx) ze zmianą slajdów po zakończeniu każdego nagrania.
  */
 export default function Autopilot({ index, active, onStart }) {
-  if (index !== 0 || active) return null
+  if (index !== 0 || active) return null;
   return (
     <button type="button" className="autopilot" onClick={onStart}>
-      stressed out? click here
+      HELP ME
     </button>
-  )
+  );
 }
