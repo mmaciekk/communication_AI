@@ -2,31 +2,157 @@
   "0": {
     "src": "audio/00.mp3",
     "title": "Wstęp — Mać-ej-aj",
-    "duration": 20.44,
-    "hash": "d461f28334b8"
+    "duration": 25.07,
+    "hash": "fdf9e603b06f"
   },
   "1": {
     "src": "audio/01.mp3",
     "title": "Komunikacja z AI",
-    "duration": 31.32,
-    "hash": "1aa322f28416"
+    "duration": 32.19,
+    "hash": "5a50a7091e2d"
   },
   "2": {
     "src": "audio/02.mp3",
     "title": "Sześć rozmów",
-    "duration": 33.61,
-    "hash": "35043b0878aa"
+    "duration": 39.09,
+    "hash": "3e179222425f"
   },
   "3": {
     "src": "audio/03.mp3",
     "title": "Czy mówisz „proszę”?",
-    "duration": 9.55,
-    "hash": "5edc6f6ff75e"
+    "duration": 9.72,
+    "hash": "61ac76c2a9a6"
+  },
+  "4": {
+    "src": "audio/04.mp3",
+    "title": "Narzędzie czy ktoś?",
+    "duration": 75.44,
+    "hash": "3d29d3184546"
+  },
+  "5": {
+    "src": "audio/05.mp3",
+    "title": "Dowody się kłócą",
+    "duration": 45.13,
+    "hash": "45e9e28ac2de"
   },
   "6": {
     "src": "audio/06.mp3",
     "title": "Świetne pytanie!",
-    "duration": 6.0,
-    "hash": "250902a22929"
+    "duration": 6.14,
+    "hash": "c91a84e1e13e"
+  },
+  "7": {
+    "src": "audio/07.mp3",
+    "title": "Pewnie to znasz",
+    "duration": 63.49,
+    "hash": "9a40ddfb088f"
+  },
+  "8": {
+    "src": "audio/08.mp3",
+    "title": "Nikt tego nie wybrał",
+    "duration": 71.68,
+    "hash": "2fa7ce31622a"
+  },
+  "9": {
+    "src": "audio/09.mp3",
+    "title": "Cytat — Science",
+    "duration": 31.26,
+    "hash": "4f00493d9e07"
+  },
+  "10": {
+    "src": "audio/10.mp3",
+    "title": "Lustro",
+    "duration": 4.88,
+    "hash": "c1c6028e5579"
+  },
+  "11": {
+    "src": "audio/11.mp3",
+    "title": "Pytanie zawiera odpowiedź",
+    "duration": 98.95,
+    "hash": "6fcd30c43032"
+  },
+  "12": {
+    "src": "audio/12.mp3",
+    "title": "Pytaj przeciwko sobie",
+    "duration": 56.1,
+    "hash": "89a171615642"
+  },
+  "13": {
+    "src": "audio/13.mp3",
+    "title": "Czy to dobry terapeuta?",
+    "duration": 7.39,
+    "hash": "3146b350940e"
+  },
+  "14": {
+    "src": "audio/14.mp3",
+    "title": "Dobre narzędzie, zły terapeuta",
+    "duration": 94.6,
+    "hash": "3dad8304183d"
+  },
+  "15": {
+    "src": "audio/15.mp3",
+    "title": "Cytat — terapeuta",
+    "duration": 21.7,
+    "hash": "ae7b449ec0f2"
+  },
+  "16": {
+    "src": "audio/16.mp3",
+    "title": "Czy może być twoją osobą?",
+    "duration": 5.25,
+    "hash": "9e7f23e80804"
+  },
+  "17": {
+    "src": "audio/17.mp3",
+    "title": "Dwadzieścia milionów",
+    "duration": 33.28,
+    "hash": "4429a1ab214e"
+  },
+  "18": {
+    "src": "audio/18.mp3",
+    "title": "Po co się ścierać?",
+    "duration": 95.43,
+    "hash": "07cb04e09822"
+  },
+  "19": {
+    "src": "audio/19.mp3",
+    "title": "Kiedy robi się groźnie",
+    "duration": 13.81,
+    "hash": "91c44838b57d"
+  },
+  "20": {
+    "src": "audio/20.mp3",
+    "title": "Sprawy w sądach",
+    "duration": 75.91,
+    "hash": "69469ae0e95e"
+  },
+  "21": {
+    "src": "audio/21.mp3",
+    "title": "Zawsze ta sama awaria",
+    "duration": 59.47,
+    "hash": "dea642210b21"
+  },
+  "22": {
+    "src": "audio/22.mp3",
+    "title": "Pięć rzeczy do zapamiętania",
+    "duration": 98.45,
+    "hash": "4d084823500b"
+  },
+  "23": {
+    "src": "audio/23.mp3",
+    "title": "Mówi jak ktoś.",
+    "duration": 38.51,
+    "hash": "abc820522f2d"
+  },
+  "24": {
+    "src": "audio/24.mp3",
+    "title": "Jak powstała ta prezentacja?",
+    "duration": 46.3,
+    "hash": "1db09c7ca6e1"
+  },
+  "25": {
+    "src": "audio/25.mp3",
+    "title": "Źródła",
+    "duration": 8.08,
+    "hash": "70548583d07d"
   }
 }

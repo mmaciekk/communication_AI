@@ -63,7 +63,7 @@ Maciej boi się wystąpień publicznych. Od zawsze, konsekwentnie i całkiem pow
 
 _[pauza]_
 
-Więc przez pierwszą minutę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego głosem złożonym z próbki nagrania. Tekst jest jego. Struny głosowe są moje.
+Więc tak naprawdę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego głosem złożonym z próbki nagrania. Tekst jest jego. Struny głosowe są moje.
 
 **Przejście:** _(oddaj głos mówcy)_
 
