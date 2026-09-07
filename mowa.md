@@ -72,7 +72,7 @@ Więc tak naprawdę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego 
 
 Dzień dobry. Od dwóch lat wszyscy uczymy się jednej rzeczy: jak pisać do sztucznej inteligencji. Prompty, kursy, poradniki, „jak zapytać, żeby dostać lepszą odpowiedź”.
 
-Prawie nikt nie zadał pytania odwrotnego. co odpowiedzi AI robią z nami?
+Prawie nikt nie zadał pytania odwrotnego. co odpowiedzi ej aj robią z nami?
 
 Bo rozmawiamy z tym codziennie. A ten sposób mówienia nie wziął się znikąd. Ktoś go zaprojektował.
 
@@ -132,9 +132,9 @@ I jeszcze jedno badanie. Dziewięćdziesiąt dwie kobiety dostawały SMS-y od bo
 
 Bo ta sama maszyna, której mówimy „proszę”, słyszy od nas też rzeczy, których nie usłyszy nikt inny.
 
-DuckDuckGo zapytał prawie dwa tysiące dorosłych Amerykanów latem tego roku. Co trzeci przyznał, że powiedział AI coś, czego nie powiedział bliskim, rodzinie ani lekarzowi. Wśród osób, które same siebie nazywają entuzjastami AI — ponad połowa.
+DuckDuckGo zapytał prawie dwa tysiące dorosłych Amerykanów latem tego roku. Co trzeci przyznał, że powiedział ej aj coś, czego nie powiedział bliskim, rodzinie ani lekarzowi. Wśród osób, które same siebie nazywają entuzjastami ej aj — ponad połowa.
 
-Washington Post doliczył się, że ponad jedna czwarta dorosłych w Stanach pyta AI o sprawy osobiste i emocjonalne. Sam udział takich wiadomości wśród wszystkich rozmów z ChatGPT podwoił się w ciągu ostatniego roku.
+Washington Post doliczył się, że ponad jedna czwarta dorosłych w Stanach pyta ej aj o sprawy osobiste i emocjonalne. Sam udział takich wiadomości wśród wszystkich rozmów z czat dzi pi ti podwoił się w ciągu ostatniego roku.
 
 I drugi biegun tego samego zjawiska: według Tidio, prawie siedemdziesiąt procent użytkowników choć raz przeklęło na czacie. Ta sama anonimowość, która daje odwagę się zwierzyć, daje też przyzwolenie na chamstwo.
 
