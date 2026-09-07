@@ -1,10 +1,10 @@
 # Komunikacja z AI
 
 Prezentacja (React + Vite) o tym, jak ludzie rozmawiają z AI i jak AI rozmawia
-z ludźmi: uprzejmość wobec chatbotów, sykofancja i język projektowany pod
-zaangażowanie, confirmation bias, AI jako terapeuta, AI jako partner/przyjaciel
-oraz przypadki, w których rozmowy z AI skończyły się tragicznie. Lista
-tematów i źródeł: [`presentation_plan.md`](presentation_plan.md).
+z ludźmi: uprzejmość i zwierzanie się wobec chatbotów, sykofancja i język
+projektowany pod zaangażowanie, confirmation bias. Lista tematów i źródeł
+(w tym researchu do wątków, które ostatecznie wypadły z decka):
+[`presentation_plan.md`](presentation_plan.md).
 
 Slajdy to dane w [`src/slides.js`](src/slides.js), renderowane przez layouty w
 `src/components/layouts`. Tekst do mówienia (skrypt prowadzącego) jest

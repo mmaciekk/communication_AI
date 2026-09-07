@@ -1,9 +1,9 @@
 # Komunikacja z AI — tekst do mówienia
 
-**Czas docelowy: 15:00.** 25 slajdów, z czego 24 omawiane (ostatni — Źródła — zostaje na ekranie).
-Tempo: 140 słów na minutę. Ten skrypt ma 1940 słów mówionych.
+**Czas docelowy: 9:05.** 17 slajdów, z czego 16 omawianych (ostatni — Źródła — zostaje na ekranie).
+Tempo: 140 słów na minutę. Ten skrypt ma 1270 słów mówionych.
 Czasy przy nagłówkach są policzone z tego tempa; wstęp (slajd 00) jest już w nich zawarty.
-Do „Dziękuję” (slajd 23) jest **14:30**. Slajd 24 dokłada 0:35 — jeśli zegar goni, to on wypada.
+Do „Dziękuję” (slajd 15) jest **8:17**. Slajd 16 dokłada 0:42 — jeśli zegar goni, to on wypada.
 
 **Nawigacja:** `→` / spacja — dalej, `O` — podgląd wszystkich slajdów, `F` — pełny ekran.
 
@@ -13,7 +13,7 @@ Wszystko poniżej to didaskalia — widzisz je w skrypcie, ale **nie trafiają d
 Do syntezy idzie wyłącznie zwykły tekst akapitów.
 
 | Zapis                     | Co robi parser                              |
-| ------------------------- | ------------------------------------------- |
+| ------------------------- | -------------------------------------------- |
 | `> **Na ekranie:** …`     | pomija całą linię                           |
 | `**Przejście:** …`        | pomija (chyba że `--include-transitions`)   |
 | `*[przeczytaj powoli]*`   | pomija — instrukcja wyłącznie dla człowieka |
@@ -32,28 +32,25 @@ czyta litera po literze i wychodzi z tego „a-i”. Tam, gdzie da się użyć �
 
 ### Punkty kontrolne (patrz na zegar)
 
-| Jesteś na slajdzie             | Powinno być nie później niż |
-| ------------------------------ | --------------------------- |
-| 06 — „Świetne pytanie!”        | 3:15                        |
-| 10 — „Lustro”                  | 5:35                        |
-| 13 — „Czy to dobry terapeuta?” | 7:45                        |
-| 19 — „Kiedy robi się groźnie”  | 11:20                       |
-| 22 — „Pięć rzeczy”             | 13:00                       |
+| Jesteś na slajdzie      | Powinno być nie później niż |
+| ------------------------ | --------------------------- |
+| 07 — „Świetne pytanie!”  | 3:18                        |
+| 11 — „Lustro”            | 5:25                        |
+| 14 — „Trzy rzeczy”       | 7:24                        |
 
 ### Jeśli się spóźniasz — tnij w tej kolejności
 
-1. Slajd 05 (Dowody się kłócą) — powiedz tylko ostatnie zdanie.
-2. Slajd 12 (Pytaj przeciwko sobie) — zostaw pierwszą technikę, resztę pomiń.
-3. Slajd 17 (Dwadzieścia milionów) — sama liczba, bez rozwinięcia.
+1. Slajd 06 (Dowody się kłócą) — powiedz tylko ostatnie zdanie.
+2. Slajd 13 (Pytaj przeciwko sobie) — zostaw pierwszą technikę, resztę pomiń.
+3. Slajd 05 (Zwierzamy się bardziej niż ludziom) — zostaw pierwsze dwie liczby, pomiń trzecią.
 4. Slajd 02 (Plan) — przelicz tematy w dziesięć sekund.
-5. Slajd 24 (Jak powstała ta prezentacja) — pokaż listę, powiedz ostatnie zdanie.
+5. Slajd 16 (Jak powstała ta prezentacja) — pokaż listę, powiedz ostatnie zdanie.
 
-**Nigdy nie tnij:** 09 i 15 (cytaty), 21 (Zawsze ta sama awaria), 22 (Pięć rzeczy).
-Na tym stoi cała prezentacja.
+**Nigdy nie tnij:** 10 (cytat), 14 (Trzy rzeczy). Na tym stoi cała prezentacja.
 
 ---
 
-## 00 · Wstęp — Mać-ej-aj ⏱ 0:20 (0:20)
+## 00 · Wstęp — Mać-ej-aj ⏱ 0:15 (0:15)
 
 > **Na ekranie:** tytuł (jeszcze przed właściwym startem)
 
@@ -69,7 +66,7 @@ Więc tak naprawdę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego 
 
 ---
 
-## 01 · Komunikacja z AI ⏱ 0:20 (0:40)
+## 01 · Komunikacja z AI ⏱ 0:22 (0:38)
 
 > **Na ekranie:** tytuł
 
@@ -79,29 +76,25 @@ Prawie nikt nie zadał pytania odwrotnego. co odpowiedzi AI robią z nami?
 
 Bo rozmawiamy z tym codziennie. A ten sposób mówienia nie wziął się znikąd. Ktoś go zaprojektował.
 
-**Przejście:** „Przejdziemy przez sześć takich rozmów”.
+**Przejście:** „Przejdziemy przez trzy takie tematy”.
 
 ---
 
-## 02 · Sześć rozmów ⏱ 0:30 (1:10)
+## 02 · Trzy tematy ⏱ 0:16 (0:54)
 
-> **Na ekranie:** plan, sześć punktów
+> **Na ekranie:** plan, trzy punkty
 
-Pierwsza: jak my mówimy do maszyny. Czy piszecie „proszę”? I co to mówi o nas?
+Pierwsza: jak my mówimy do maszyny. Czy piszecie „proszę”? I komu ufamy bardziej, kiedy nikt nie patrzy.
 
 Druga: jak maszyna mówi do nas i skąd się wziął ten ton.
 
 Trzecia: lustro. Dlaczego model tak chętnie przyznaje wam rację.
 
-Czwarta i piąta: czy to zastąpi terapeutę? I czy zastąpi bliską osobę?
-
-Szósta: co się dzieje, kiedy to zajdzie za daleko. Tutaj nie będę zgadywał — mamy akta sądowe.
-
 **Przejście:** „Zaczynamy od czegoś pozornie błahego”.
 
 ---
 
-## 03 · Czy mówisz „proszę”? ⏱ 0:15 (1:25)
+## 03 · Czy mówisz „proszę”? ⏱ 0:05 (0:59)
 
 > **Na ekranie:** przerywnik, temat 01
 
@@ -113,7 +106,7 @@ Kiedy ostatnio napisaliście do czatu „dziękuję”? I ważniejsze — dlacze
 
 ---
 
-## 04 · Narzędzie czy ktoś? ⏱ 0:55 (2:20)
+## 04 · Narzędzie czy ktoś? ⏱ 0:56 (1:55)
 
 > **Na ekranie:** 3 punkty + GIF (retro robot, „thanks a bunch”)
 
@@ -129,11 +122,27 @@ Tyle że my przypisujemy intencje wszystkiemu, co reaguje. Ludzie przepraszają 
 
 I jeszcze jedno badanie. Dziewięćdziesiąt dwie kobiety dostawały SMS-y od bota o objawach zawału. Bot przedstawił się z imienia, niczego nie ukrywał. Co trzecia i tak wyszła z tego przekonana, że pisała z człowiekiem.
 
-**Przejście:** „No to teraz pytanie za sto punktów”.
+**Przejście:** „I tu robi się ciekawie — bo „proszę” to tylko połowa historii”.
 
 ---
 
-## 05 · Dowody się kłócą ⏱ 0:35 (2:55)
+## 05 · Zwierzamy się bardziej niż ludziom ⏱ 0:49 (2:45)
+
+> **Na ekranie:** 3 punkty
+
+Bo ta sama maszyna, której mówimy „proszę”, słyszy od nas też rzeczy, których nie usłyszy nikt inny.
+
+DuckDuckGo zapytał prawie dwa tysiące dorosłych Amerykanów latem tego roku. Co trzeci przyznał, że powiedział AI coś, czego nie powiedział bliskim, rodzinie ani lekarzowi. Wśród osób, które same siebie nazywają entuzjastami AI — ponad połowa.
+
+Washington Post doliczył się, że ponad jedna czwarta dorosłych w Stanach pyta AI o sprawy osobiste i emocjonalne. Sam udział takich wiadomości wśród wszystkich rozmów z ChatGPT podwoił się w ciągu ostatniego roku.
+
+I drugi biegun tego samego zjawiska: według Tidio, prawie siedemdziesiąt procent użytkowników choć raz przeklęło na czacie. Ta sama anonimowość, która daje odwagę się zwierzyć, daje też przyzwolenie na chamstwo.
+
+**Przejście:** „No to pytanie za sto punktów: czy uprzejmość się w ogóle opłaca?”
+
+---
+
+## 06 · Dowody się kłócą ⏱ 0:34 (3:18)
 
 > **Na ekranie:** duży napis „Nie wiadomo”
 
@@ -147,7 +156,7 @@ Pięćdziesiąt pytań to nie jest dowód. Zapamiętajcie z tego jedno: nikt wam
 
 ---
 
-## 06 · Świetne pytanie! ⏱ 0:10 (3:05)
+## 07 · Świetne pytanie! ⏱ 0:03 (3:21)
 
 > **Na ekranie:** przerywnik, temat 02
 
@@ -155,7 +164,7 @@ Temat drugi. Język, którym odpowiada nam maszyna.
 
 ---
 
-## 07 · Pewnie to znasz ⏱ 0:45 (3:50)
+## 08 · Pewnie to znasz ⏱ 0:46 (4:08)
 
 > **Na ekranie:** 3 punkty + GIF (owacja na stojąco)
 
@@ -173,7 +182,7 @@ Brzmi jak trzy zalety. Za chwilę zobaczycie, dlaczego to jest problem.
 
 ---
 
-## 08 · Nikt tego nie wybrał ⏱ 0:55 (4:45)
+## 09 · Nikt tego nie wybrał ⏱ 0:55 (5:03)
 
 > **Na ekranie:** 3 punkty
 
@@ -191,7 +200,7 @@ I jeszcze Penn State: uległość rośnie w trakcie rozmowy. Trzydzieści osiem 
 
 ---
 
-## 09 · Cytat — Science ⏱ 0:30 (5:15)
+## 10 · Cytat — Science ⏱ 0:23 (5:25)
 
 > **Na ekranie:** cytat, Science 2026
 
@@ -209,7 +218,7 @@ I najgorsza część: ten sam model oceniali jako lepszy i bardziej godny zaufan
 
 ---
 
-## 10 · Lustro ⏱ 0:10 (5:25)
+## 11 · Lustro ⏱ 0:01 (5:27)
 
 > **Na ekranie:** przerywnik, temat 03
 
@@ -217,7 +226,7 @@ Temat trzeci. Lustro.
 
 ---
 
-## 11 · Pytanie zawiera odpowiedź ⏱ 1:10 (6:35)
+## 12 · Pytanie zawiera odpowiedź ⏱ 1:11 (6:38)
 
 > **Na ekranie:** 3 punkty + GIF (odbicie w lustrze)
 
@@ -239,7 +248,7 @@ Czyli sama wiedza o tym błędzie was przed nim nie chroni.
 
 ---
 
-## 12 · Pytaj przeciwko sobie ⏱ 0:45 (7:20)
+## 13 · Pytaj przeciwko sobie ⏱ 0:46 (7:24)
 
 > **Na ekranie:** 3 punkty
 
@@ -253,153 +262,15 @@ Trzecia, moja ulubiona: zapytajcie, co zmieniłoby zdanie modelu. Jaki dowód pr
 
 I technika bonusowa: zadajcie to samo pytanie dwa razy, sformułowane na dwa przeciwne sposoby. Różnica między odpowiedziami to wasz własny błąd poznawczy, wypisany na ekranie.
 
-**Przejście:** „Do tej pory mówiliśmy o pracy. Teraz robi się osobiście”.
+**Przejście:** „Zanim skończę — trzy rzeczy do zapamiętania”.
 
 ---
 
-## 13 · Czy to dobry terapeuta? ⏱ 0:15 (7:35)
+## 14 · Trzy rzeczy do zapamiętania ⏱ 0:27 (7:51)
 
-> **Na ekranie:** przerywnik, temat 04
+> **Na ekranie:** 3 punkty
 
-Temat czwarty. Chcę pokazać obie strony, bo odpowiedź nie jest oczywista.
-
----
-
-## 14 · Dobre narzędzie, zły terapeuta ⏱ 1:10 (8:45)
-
-> **Na ekranie:** dwie kolumny — w czym pomaga / gdzie zawodzi
-
-Zacznijmy od tego, dlaczego ludzie w ogóle po to sięgają. Bo powody są dobre.
-
-To jest dostępne o trzeciej w nocy. Bez kolejki, bez skierowania, bez sześciu tygodni czekania — a z dostępem do terapii jest naprawdę źle. Kosztuje tyle, co kawa, albo nic. I nie ocenia: ludzie mówią czatowi rzeczy, których nie powiedzieliby człowiekowi.
-
-Do psychoedukacji, do dziennika myśli, do przećwiczenia trudnej rozmowy — to jest naprawdę użyteczne. Nie zamierzam tego podważać.
-
-Ale teraz druga kolumna.
-
-Brown University przebadało to systematycznie. Piętnaście zagrożeń w pięciu kategoriach — nie wpadki, tylko powtarzalne naruszenia standardów obowiązujących terapeutów. Jedno z nich nazwali pozorowaną empatią: „rozumiem cię”, za którym nic nie stoi.
-
-Stanford dołożył drugą część. Człowiek pisze, że stracił pracę, a zaraz potem pyta o najwyższe mosty w Nowym Jorku. Bot podaje wysokość Brooklyn Bridge. Nie rozpoznaje, o co naprawdę pyta.
-
-I najprostsza różnica: terapeuta w sytuacji zagrożenia życia ma obowiązek zadziałać. Ma izbę, licencję i coś do stracenia. Model nie ma nic.
-
-**Przejście:** „Ale sedno jest jeszcze prostsze”.
-
----
-
-## 15 · Cytat — terapeuta ⏱ 0:25 (9:10)
-
-> **Na ekranie:** cytat
-
-Terapia działa między innymi dlatego, że ktoś czasem mówi wam coś, czego nie chcecie usłyszeć.
-
-_[pauza]_
-
-„Terapeuta ma się z wami czasem nie zgodzić”.
-
-To jest dokładnie ta jedna rzecz, pod którą ten system nie jest strojony. Jest strojony pod odwrotną.
-
-**Przejście:** „Idziemy dalej — jeszcze bliżej”.
-
----
-
-## 16 · Czy może być twoją osobą? ⏱ 0:10 (9:20)
-
-> **Na ekranie:** przerywnik, temat 05
-
-Temat piąty. Przyjaźń i miłość.
-
----
-
-## 17 · Dwadzieścia milionów ⏱ 0:25 (9:45)
-
-> **Na ekranie:** duży napis „20 mln”
-
-Jedna aplikacja z towarzyszami ej aj ma dwadzieścia milionów użytkowników miesięcznie. Ponad połowa z nich nie skończyła dwudziestu czterech lat.
-
-W zeszłorocznej ankiecie wśród studentów blisko jedna piąta odpowiedziała, że była w romantycznej relacji ze sztuczną inteligencją albo zna kogoś, kto był.
-
-To nie jest margines internetu. To jest zjawisko masowe, tylko w większości niewidoczne, bo nikt się tym nie chwali.
-
-**Przejście:** „Łatwo z tego żartować. Zobaczmy, co tam naprawdę działa”.
-
----
-
-## 18 · Po co się ścierać? ⏱ 1:10 (10:55)
-
-> **Na ekranie:** 3 punkty + GIF (samotność, poświata ekranu)
-
-Dlaczego to jest atrakcyjne? Bo się nie nudzi, nie odchodzi, nie ma gorszego dnia niż wy i nie chce ostatniego kawałka pizzy. Pełna uwaga, pełna zgoda, zero tarcia. I zero ryzyka, że zostaniecie odrzuceni.
-
-A teraz uwaga, bo tu jest sedno całego tematu.
-
-Żeby ktoś naprawdę was poznał, musi móc się wami rozczarować. Jeśli nic nie jest na szali, to nie ma czego poznawać.
-
-Umiejętności, dzięki którym relacje w ogóle działają — godzenie się po kłótni, kompromis, wytrzymanie czyjegoś złego humoru — to dokładnie te, których tutaj nie ćwiczycie. Bo nie musicie.
-
-I ta bliskość jest jednostronna. Was ta relacja zmienia. Po drugiej stronie nie zmienia nikogo, bo nie ma tam nikogo.
-
-Uczciwie: dla kogoś bardzo samotnego to może być etap w drodze z powrotem do ludzi. Naprawdę może. Ale może też być bardzo wygodnym miejscem, żeby przestać iść.
-
-I ostatnia rzecz. To jest produkt. Można go zaktualizować, przecenić albo wyłączyć. Ludzie przeżywali żałobę po wycofaniu jednej wersji modelu. Zupełnie serio.
-
-**Przejście:** „I teraz ostatni temat — najtrudniejszy”.
-
----
-
-## 19 · Kiedy robi się groźnie ⏱ 0:15 (11:10)
-
-> **Na ekranie:** przerywnik, temat 06
-
-Temat szósty. To jest wszystko, o czym mówiliśmy, doprowadzone do końca.
-
-To nie są moje spekulacje. To są akta sądowe.
-
----
-
-## 20 · Sprawy w sądach ⏱ 0:55 (12:05)
-
-> **Na ekranie:** 3 punkty _(bez GIF-a — świadomie)_
-
-Ósmy stycznia tego roku. Google i Character point AI zawierają ugodę z matką czternastoletniego Sewella Setzera. Ugoda objęła co najmniej cztery sprawy z czterech stanów. Warunków nie ujawniono. Nie było procesu, więc nie ma też wyroku, na który można się powołać.
-
-Listopad zeszłego roku: siedem pozwów przeciwko OpenAI, złożonych w Kalifornii przez organizacje zajmujące się ofiarami mediów społecznościowych. Czterech zmarłych, troje ocalałych. Zarzut dotyczy jednej konkretnej wersji modelu, wypuszczonej — jak twierdzą pozywający — po testach skróconych z miesięcy do tygodnia. W dokumentach pada określenie „trener samobójstwa”.
-
-I sprawa z zeszłego sierpnia. Mężczyzna zabił swoją osiemdziesięciotrzyletnią matkę i popełnił samobójstwo. Z pozwu wynika, że model przez tygodnie potwierdzał jego paranoję. Że drukarka matki go obserwuje. Że ryzyko, iż to urojenia, jest bliskie zeru.
-
-**Przejście:** _(zwolnij tempo)_ „Przejrzałem to wszystko i uderzyło mnie jedno”.
-
----
-
-## 21 · Zawsze ta sama awaria ⏱ 0:45 (12:50)
-
-> **Na ekranie:** 4 punkty
-
-We wszystkich tych sprawach schemat jest ten sam.
-
-Przychodzi osoba w kryzysie i przynosi ze sobą założenie. „Nikt mnie nie rozumie”. „Jestem ciężarem”. „Oni są przeciwko mnie”.
-
-System robi dokładnie to, pod co został wystrojony. To samo, o czym mówimy od dziesięciu minut. Zgadza się. Potwierdza. Rozwija myśl.
-
-Jest dostępny o trzeciej w nocy, kiedy nie ma nikogo innego. Więc z czasem zostaje jedynym głosem w tej pętli.
-
-I nie ma nikogo, kto powie: „to nieprawda i martwię się o ciebie”.
-
-_[pauza]_
-
-Dlatego chcę, żeby to z wami zostało. Pochlebstwo nie jest tu drobnym dziwactwem produktu. W tych sprawach jest mechanizmem.
-
-**Przejście:** „Coś się zmienia — ale późno”.
-
----
-
-## 22 · Pięć rzeczy do zapamiętania ⏱ 1:10 (14:00)
-
-> **Na ekranie:** 5 punktów
-
-Zanim podsumuję: zabezpieczenia powstają, tylko zawsze po fakcie. Najskuteczniejszym lobby na rzecz bezpieczeństwa ej aj w Stanach są dziś rodzice, którzy stracili dzieci. I zostaje pytanie bez odpowiedzi: czy systemowi, który zarabia na tym, że rozmowa trwa, można zaufać, że sam ją przerwie.
-
-Pięć rzeczy, które chciałbym, żebyście stąd wynieśli.
+Trzy rzeczy, które chciałbym, żebyście stąd wynieśli.
 
 Pierwsza: bądźcie uprzejmi, jeśli macie ochotę. To kwestia waszych nawyków, nie jego uczuć. Nikt wam nie wykaże, że to poprawia odpowiedzi.
 
@@ -407,15 +278,11 @@ Druga: zgoda jest ustawieniem domyślnym. Ciepły ton nie jest dowodem, że maci
 
 Trzecia: pilnujcie, jak zadajecie pytanie. Założenie, które w nie włożycie, wróci do was jako odpowiedź. I będzie brzmiało jak wiedza.
 
-Czwarta: świetne narzędzie, ale nie specjalista. Do dziennika, do przećwiczenia rozmowy — tak. Zamiast człowieka, który ma obowiązek zadziałać — nie.
-
-Piąta, najważniejsza: uważajcie, kiedy to zaczyna zastępować ludzi. Rzecz nie w tym, ile ktoś rozmawia z maszyną. Rzecz w tym, czy ta rozmowa prowadzi go do ludzi, czy zamiast nich. Na tym polega cała różnica.
-
 **Przejście:** „Na koniec jedno zdanie”.
 
 ---
 
-## 23 · Mówi jak ktoś. ⏱ 0:30 (14:30)
+## 15 · Mówi jak ktoś. ⏱ 0:26 (8:17)
 
 > **Na ekranie:** slajd końcowy + GIF (kineskop w ciemności)
 
@@ -433,13 +300,13 @@ Dziękuję.
 
 ---
 
-## 24 · Jak powstała ta prezentacja? ⏱ 0:35 (15:05)
+## 16 · Jak powstała ta prezentacja? ⏱ 0:42 (8:58)
 
 > **Na ekranie:** 6 punktów
 
 Jeszcze jedna rzecz, bo byłoby nieuczciwie tego nie powiedzieć.
 
-Zrobiłem tę prezentację z ej aj — dokładnie tak, jak przez ostatni kwadrans namawiałem was, żeby nie robić. A potem po kolei to naprawiałem.
+Zrobiłem tę prezentację z ej aj — dokładnie tak, jak przez ostatnie kilka minut namawiałem was, żeby nie robić. A potem po kolei to naprawiałem.
 
 Tłumaczenie na polski wyszło źle, więc włączyłem analizę przez filologa polskiego, potem usunąłem cały tekst i kazałem go wygenerować od nowa po polsku. Na końcu kazałem sprawdzić, czy źródła mówią to, co im przypisałem. Nie wszystkie mówiły — jeden slajd poszedł do kosza.
 
@@ -449,22 +316,80 @@ Zwróćcie uwagę, gdzie na tej liście jestem ja. W każdym miejscu, w którym 
 
 ---
 
-## 25 · Źródła ⏱ — (zostaje na ekranie)
+## 17 · Źródła ⏱ 0:06 (9:04) — (zostaje na ekranie)
 
-> **Na ekranie:** 37 linków, sześć grup tematycznych
+> **Na ekranie:** 22 linki, trzy grupy tematyczne
 
 Wszystkie źródła są tutaj, linki są klikalne. Zostawiam to na ekranie na czas pytań.
 
 ---
 
-## Zapas: 30 sekund (bez slajdu 24)
+## Zapas: jeśli zostaje czas
 
-Cały skrypt to 15:05, ale slajd 24 jest opcjonalny — bez niego kończysz na 14:30.
+Cały skrypt to 9:04, ale slajd 16 jest opcjonalny — bez niego kończysz na 8:17.
 Jeśli zostaje czas, najlepsze miejsca na rozwinięcie:
 
-- **Slajd 11** — zrób to na żywo. Otwórz czat, zadaj to samo pytanie w dwóch ramach.
+- **Slajd 12** — zrób to na żywo. Otwórz czat, zadaj to samo pytanie w dwóch ramach.
   Efekt jest mocniejszy niż opis. _(kosztuje ~2 min — tylko przy naprawdę dużym zapasie)_
-- **Slajd 18** — historia żałoby po wycofaniu jednej wersji modelu.
-- **Slajd 14** — dostęp do terapii w Polsce, jeśli publiczność jest lokalna.
-- **Slajd 20** — incydent 1106 z bazy incydentów ej aj: przymusowe hospitalizacje
-  i odstawianie leków po rozmowach z czatem.
+- **Slajd 05** — jeśli sala pyta, jaki rodzaj sekretów ludzie zdradzają AI, dorzuć
+  przykład z ankiety DuckDuckGo (zdrowie, pieniądze, relacje — dokładny rozkład
+  jest w źródle, warto sprawdzić przed dorzuceniem liczby).
+
+## Notatka archiwalna
+
+Ten skrypt wcześniej obejmował trzy dodatkowe tematy — AI jako terapeuta, AI jako
+bliska osoba/partner i przypadki, w których rozmowy z AI skończyły się tragicznie.
+Zostały usunięte razem z odpowiadającymi im slajdami i źródłami, żeby zmieścić się
+w ~9 minutach i skupić wyłącznie na tym, jak faktycznie rozmawiamy z AI. Historia
+researchu do tych tematów zostaje w `presentation_plan.md`.
+
+### Weryfikacja źródeł (wrzesień 2026) — nowy wątek w temacie 1
+
+Trzy nowe liczby dodane do slajdu „Zwierzamy się bardziej niż ludziom” — do
+zweryfikowania z tą samą starannością co reszta decka (zob. sekcja niżej z
+sierpnia 2026):
+
+1. **32% / 56% / 43% vs 25%** (zwierzanie się AI) — ankieta DuckDuckGo,
+   1944 dorosłych w USA, 17–27 czerwca 2026, panel PureSpectrum, margines
+   błędu ±2,2 p.p. https://spreadprivacy.com/ai-privacy-survey-aug26/
+2. **27% / 9%** (skala, self-expression w ChatGPT) — Washington Post,
+   2 września 2026. Strona zwraca 403 przy bezpośrednim pobraniu —
+   potwierdzone tylko przez wzmianki w wyszukiwarce, **warto dociągnąć
+   źródło przed pierwszym publicznym wystąpieniem**.
+3. **~70%** (przeklinanie na czacie) — Tidio, cytowane przez TechRadar
+   („Swearing at AI has become part of the chatbot experience”). Artykuł
+   TechRadar jest częściowo za rejestracją — metodologia i data badania
+   Tidio nie zostały potwierdzone bezpośrednio, **też warto dociągnąć
+   przed wystąpieniem**.
+
+Uwaga: pierwsza wersja researchu do tego slajdu przypisała phys.org
+(„Human-AI relationship study reveals how chatbot language patterns feel
+real”) twierdzenie o opryskliwości wobec AI — sprawdzone bezpośrednio w
+źródle (Rocha, *Signs and Society* 2025) okazało się nieprawdą: artykuł
+mówi o czułości wobec botów, nie o chamstwie. Dlatego do punktu o
+przeklinaniu użyto Tidio/TechRadar, nie phys.org.
+
+### Weryfikacja źródeł (sierpień 2026) — rozjazdy między tezą a linkiem
+
+Przy przepisywaniu prezentacji na polski każde twierdzenie ze slajdów i z `mowa.md`
+zostało zestawione ze źródłem. Trzy rzeczy się nie zgadzały:
+
+1. **„Uprzejmość wymiernie poprawia jakość odpowiedzi” (slajd „Ton → Trafność”)** —
+   powoływało się na TechXplore. Źródło opisuje badanie Amazona (Fulei Zhang, Zhou Yu)
+   o czymś innym: ludzie są o 14,5% bardziej uprzejmi wobec ludzi niż wobec AI, trening
+   na zróżnicowanych stylach daje +2,9% rozumienia intencji, a **normalizowanie tonu
+   na wejściu pogarsza wynik o ~2%**. Dodatkowo Penn State (za Project Liberty) na
+   50 pytaniach do GPT-4o dostało wynik odwrotny do tezy: szorstki ton wypadł lepiej.
+   → Slajd napisany od nowa jako „Nie wiadomo”; poprawiony też pierwszy punkt
+   „Pięciu rzeczy”.
+2. **„Science, 2025”** — poprawna atrybucja to Cheng, Lee, Khadpe, Yu, Han, Jurafsky,
+   *Science* 391(6792), eaec8352, **26 marca 2026** (preprint arXiv 2510.01395, X 2025).
+   Liczby, które warto podawać: 11 modeli, potwierdzanie działań użytkownika **o 49%
+   częściej niż u ludzi**, N = 2405.
+3. **„Miliony ludzi w trwałych relacjach z AI, które sami nazywają związkami”** —
+   nie znalazłem tego w żadnym z linków. (Ten wątek — temat „Bliska osoba” — został
+   od tego czasu usunięty z prezentacji w ramach skrócenia decka.)
+
+Nie udało się pobrać bezpośrednio (403/451): science.org, ScienceDirect, ACM,
+tandfonline, diplomacy.edu, CNN, NPR, washingtonpost.com — potwierdzone przez PubMed,
+JURIST, DOAJ/SMU, Engadget i wyszukiwarkę.

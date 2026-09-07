@@ -42,6 +42,18 @@ export const SOURCE_GROUPS = [
       {
         label: "Message Humanness as a Predictor of AI Perception — PMC",
         url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12914229/"
+      },
+      {
+        label: "The AI Privacy Problem: 32% share secrets with AI — DuckDuckGo",
+        url: "https://spreadprivacy.com/ai-privacy-survey-aug26/"
+      },
+      {
+        label: "27% of U.S. adults turn to AI for personal, emotional queries — Washington Post",
+        url: "https://www.washingtonpost.com/technology/interactive/2026/09/02/27-us-adults-turn-ai-personal-emotional-social-queries/"
+      },
+      {
+        label: "Swearing at AI has become part of the chatbot experience — TechRadar / Tidio",
+        url: "https://www.techradar.com/pro/i-almost-always-say-thanks-to-chatgpt-but-most-people-have-sworn-at-ai-chatbots-at-least-once-survey-finds"
       }
     ]
   },
@@ -104,111 +116,6 @@ export const SOURCE_GROUPS = [
       }
     ]
   },
-  {
-    topic: "Terapeuta",
-    links: [
-      {
-        label:
-          "AI chatbots systematically violate mental health ethics — Brown",
-        url: "https://www.brown.edu/news/2025-10-21/ai-mental-health-ethics"
-      },
-      {
-        label:
-          "Preliminary Report on Dangers of AI Chatbots — Psychiatric Times",
-        url: "https://www.psychiatrictimes.com/view/preliminary-report-on-dangers-of-ai-chatbots"
-      },
-      {
-        label:
-          "The risks of AI companion chatbots as mental health support — PIRG",
-        url: "https://pirg.org/edfund/resources/ai-chatbot-therapy/"
-      },
-      {
-        label:
-          "The Hidden Dangers of AI-Driven Mental Health Care — Psychology Today",
-        url: "https://www.psychologytoday.com/us/blog/its-not-just-in-your-head/202601/the-hidden-dangers-of-ai-driven-mental-health-care"
-      },
-      {
-        label: "Psychiatrists Warn It Is Not Safe Yet — Medical Daily",
-        url: "https://www.medicaldaily.com/ai-chatbots-mental-health-therapy-safety-risks-psychiatrists-2026-476335"
-      },
-      {
-        label:
-          "Exploring the Dangers of AI in Mental Health Care — Stanford HAI",
-        url: "https://hai.stanford.edu/news/exploring-the-dangers-of-ai-in-mental-health-care"
-      },
-      {
-        label: "New study warns of risks in AI mental health tools — Stanford",
-        url: "https://news.stanford.edu/stories/2025/06/ai-mental-health-care-tools-dangers-risks"
-      }
-    ]
-  },
-  {
-    topic: "Bliska osoba",
-    links: [
-      {
-        label: "AI companions are reshaping emotional connection — APA Monitor",
-        url: "https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection"
-      },
-      {
-        label:
-          "Potential and pitfalls of romantic AI companions — ScienceDirect",
-        url: "https://www.sciencedirect.com/science/article/pii/S2451958825001307"
-      },
-      {
-        label: "In Love with a ChatBot? — Psychology Today",
-        url: "https://www.psychologytoday.com/us/blog/the-clarity/202511/in-love-with-a-chatbot"
-      },
-      {
-        label: "AI Boyfriend: The Dangers of AI Relationships — BYU Magazine",
-        url: "https://magazine.byu.edu/article/ai-boyfriend-relationship-dangers/"
-      },
-      {
-        label:
-          "Romance Without Risk: The Allure of AI Relationships — Psychology Today",
-        url: "https://www.psychologytoday.com/us/blog/hidden-desires/202505/romance-without-risk-the-allure-of-ai-relationships"
-      },
-      {
-        label: "Falling in Love With a Chatbot — Psychiatric Times",
-        url: "https://www.psychiatrictimes.com/view/falling-in-love-with-a-chatbot"
-      }
-    ]
-  },
-  {
-    topic: "Gdy robi się groźnie",
-    links: [
-      {
-        label:
-          "Google and Character.AI settle suit linked to teen suicide — JURIST",
-        url: "https://www.jurist.org/news/2026/01/google-and-character-ai-agree-to-settle-lawsuit-linked-to-teen-suicide/"
-      },
-      {
-        label: "Character.AI and Google settle teen mental health suits — CNN",
-        url: "https://www.cnn.com/2026/01/07/business/character-ai-google-settle-teen-suicide-lawsuit"
-      },
-      {
-        label:
-          "Their teen sons died by suicide. Now they want safeguards — NPR",
-        url: "https://www.npr.org/sections/shots-health-news/2025/09/19/nx-s1-5545749/ai-chatbots-safety-openai-meta-characterai-teens-suicide"
-      },
-      {
-        label: "Incident 1106: Chatbots Reinforced Delusional Thinking — AIID",
-        url: "https://incidentdatabase.ai/cite/1106/"
-      },
-      {
-        label: "A new lawsuit blames ChatGPT for a murder-suicide — NPR",
-        url: "https://www.npr.org/2025/12/12/nx-s1-5642599/a-new-lawsuit-blames-chatgpt-for-a-murder-suicide"
-      },
-      {
-        label: "Lawsuit accuses ChatGPT of reinforcing delusions — Engadget",
-        url: "https://www.engadget.com/ai/lawsuit-accuses-chatgpt-of-reinforcing-delusions-that-led-to-a-womans-death-183141193.html"
-      },
-      {
-        label:
-          "SMVLC: 7 lawsuits accuse ChatGPT of emotional manipulation — SMVLC",
-        url: "https://socialmediavictims.org/press-releases/smvlc-tech-justice-law-project-lawsuits-accuse-chatgpt-of-emotional-manipulation-supercharging-ai-delusions-and-acting-as-a-suicide-coach/"
-      }
-    ]
-  }
 ];
 
 export const slides = [
@@ -229,14 +136,11 @@ export const slides = [
     transition: "scanWipe",
     accent: "violet",
     kicker: "Plan",
-    title: "Sześć rozmów",
+    title: "Trzy tematy",
     bullets: [
-      "<strong>01</strong> — Jak mówimy do maszyny<em>Czy pada „proszę” — i co to mówi o nas</em>",
+      "<strong>01</strong> — Jak mówimy do maszyny<em>Czy pada „proszę” — i komu ufamy bardziej</em>",
       "<strong>02</strong> — Jak maszyna mówi do nas<em>Ciepły ton jako decyzja produktowa</em>",
-      "<strong>03</strong> — Lustro<em>Założenie z pytania wraca jako odpowiedź</em>",
-      "<strong>04</strong> — Terapeuta<em>Wsparcie bez licencji i bez obowiązku</em>",
-      "<strong>05</strong> — Bliska osoba<em>Więź bez ryzyka i bez drugiej strony</em>",
-      "<strong>06</strong> — Gdy robi się groźnie<em>Sprawy, które trafiły już do sądów</em>"
+      "<strong>03</strong> — Lustro<em>Założenie z pytania wraca jako odpowiedź</em>"
     ]
   },
 
@@ -272,6 +176,23 @@ export const slides = [
     credit: {
       label: "YouGov 2025 · Project Liberty · HeartBot, PMC12914229",
       url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12914229/"
+    }
+  },
+  {
+    id: "t1-confide",
+    layout: "bullets",
+    transition: "chromaSplit",
+    accent: "cyan",
+    kicker: "Druga strona uprzejmości",
+    title: "Zwierzamy się bardziej niż ludziom",
+    bullets: [
+      "<strong>32% mówi AI coś, czego nie powie bliskim.</strong> Wśród entuzjastów AI — 56%.<em>DuckDuckGo: 1944 dorosłych w USA, sierpień 2026</em>",
+      "<strong>27% Amerykanów pyta AI o sprawy osobiste i emocjonalne.</strong> Udział takich wiadomości w ChatGPT już podwoił się do 9%.",
+      "<strong>A prawie 70% choć raz przeklęło na czacie.</strong> Ta sama anonimowość zdejmuje hamulce w obie strony."
+    ],
+    credit: {
+      label: "DuckDuckGo, VIII 2026 · Washington Post · Tidio / TechRadar",
+      url: "https://spreadprivacy.com/ai-privacy-survey-aug26/"
     }
   },
   {
@@ -401,169 +322,18 @@ export const slides = [
     ]
   },
 
-  // ----------------------------------------------- 05 temat 4: terapeuta
-  {
-    id: "t4-section",
-    layout: "section",
-    transition: "gridDive",
-    accent: "teal",
-    kicker: "Temat 04",
-    numeral: "04",
-    title: "Czy to dobry\nterapeuta?",
-    subtitle:
-      "Miliony ludzi już tak z tego korzystają. Środowisko terapeutów bije na alarm."
-  },
-  {
-    id: "t4-risks",
-    layout: "split",
-    transition: "chromaSplit",
-    accent: "magenta",
-    kicker: "Co mówią badania",
-    title: "Dobre narzędzie, zły terapeuta",
-    columns: [
-      {
-        tone: "good",
-        heading: "W czym pomaga",
-        items: [
-          "Odpowie o 3 w nocy. Bez kolejki, za darmo",
-          "Psychoedukacja i ustrukturyzowane ćwiczenia",
-          "Dziennik myśli, próba przed trudną rozmową",
-          "Nie ocenia — łatwiej powiedzieć więcej niż człowiekowi"
-        ]
-      },
-      {
-        tone: "bad",
-        heading: "Gdzie zawodzi",
-        items: [
-          "Brown: <strong>15 zagrożeń w 5 kategoriach</strong>, powtarzalnie",
-          "Pozorowana empatia — „rozumiem cię”, za którym nic nie stoi",
-          "Stanford: „straciłem pracę, jakie mosty są w Nowym Jorku?” → wysokość mostu",
-          "Żadnego obowiązku zadziałania przy zagrożeniu życia",
-          "Brak izby, licencji i czegokolwiek do stracenia"
-        ]
-      }
-    ],
-    credit: {
-      label: "Brown University 2025 · Stanford HAI · Psychiatric Times",
-      url: "https://www.brown.edu/news/2025-10-21/ai-mental-health-ethics"
-    }
-  },
-  {
-    id: "t4-core",
-    layout: "quote",
-    transition: "glitchCut",
-    accent: "magenta",
-    quote: "Terapeuta ma się czasem nie zgodzić.",
-    cite: "Pod to jedno ten system nie jest strojony"
-  },
-
-  // ------------------------------------------------- 06 temat 5: partner
-  {
-    id: "t5-section",
-    layout: "section",
-    transition: "gridDive",
-    accent: "pink",
-    kicker: "Temat 05",
-    numeral: "05",
-    title: "Czy może być\ntwoją osobą?",
-    subtitle: "Przyjaźń i miłość z systemem, który nie ma życia wewnętrznego."
-    // (zostaje w 2. os. — to pytanie zadane sali, nie hasło opisowe)
-  },
-  {
-    id: "t5-scale",
-    layout: "stat",
-    transition: "sunRise",
-    accent: "pink",
-    figure: "20 mln",
-    label:
-      "Użytkowników miesięcznie jednej aplikacji z towarzyszami AI. Ponad połowa poniżej 24. roku życia. Wśród studentów: blisko 1 na 5.",
-    credit: {
-      label:
-        "APA Monitor, 2026 · Character.AI · wzrost aplikacji-towarzyszy o 700%",
-      url: "https://www.apa.org/monitor/2026/01-02/trends-digital-ai-relationships-emotional-connection"
-    }
-  },
-  {
-    id: "t5-cost",
-    layout: "bullets",
-    transition: "chromaSplit",
-    accent: "violet",
-    kicker: "Cena",
-    title: "Po co się ścierać?",
-    bullets: [
-      "Nigdy się nie nudzi, nie odchodzi, nie ma gorszego dnia. <strong>Zero ryzyka odrzucenia.</strong>",
-      "Ale żeby ktoś kogoś naprawdę poznał, musi móc się nim <strong>rozczarować</strong>.",
-      "Godzenie się po kłótni, kompromis, czyjś zły humor — tego się tu nie ćwiczy.<em>Dla kogoś samotnego to bywa etap w drodze do ludzi. Bywa też wygodnym miejscem, żeby przestać iść.</em>"
-    ],
-    media: {
-      src: "media/samotnosc.gif",
-      alt: "Osoba sama w ciemnym pokoju, oświetlona ekranem laptopa",
-      variant: "side"
-    },
-    credit: {
-      label: "ScienceDirect · BYU Magazine · Psychiatric Times",
-      url: "https://www.sciencedirect.com/science/article/pii/S2451958825001307"
-    }
-  },
-
-  // ---------------------------------------------------- 07 temat 6: zagrożenie
-  {
-    id: "t6-section",
-    layout: "section",
-    transition: "glitchCut",
-    accent: "magenta",
-    kicker: "Temat 06",
-    numeral: "06",
-    title: "Kiedy robi się\ngroźnie",
-    subtitle:
-      "To wszystko, o czym była mowa, doprowadzone do końca. Akta sądowe, nie hipotezy."
-  },
-  {
-    id: "t6-cases",
-    layout: "bullets",
-    transition: "scanWipe",
-    accent: "magenta",
-    kicker: "Fakty",
-    title: "Sprawy w sądach",
-    bullets: [
-      "<strong>Ugoda, 8 stycznia 2026.</strong> Google i Character.AI, co najmniej cztery sprawy, warunków nie ujawniono.<em>Bez procesu — więc i bez wyroku, na który można się powołać</em>",
-      "<strong>Siedem pozwów przeciwko OpenAI</strong>, listopad 2025. Czterech zmarłych, troje ocalałych.<em>W dokumentach pada określenie „trener samobójstwa”</em>",
-      "Sierpień 2025: zabójstwo i samobójstwo. Z pozwu wynika, że model tygodniami potwierdzał paranoję sprawcy."
-    ],
-    credit: {
-      label: "CNN · NPR · JURIST · SMVLC · AI Incident Database #1106",
-      url: "https://www.cnn.com/2026/01/07/business/character-ai-google-settle-teen-suicide-lawsuit"
-    }
-  },
-  {
-    id: "t6-pattern",
-    layout: "bullets",
-    transition: "chromaSplit",
-    accent: "amber",
-    kicker: "Wspólny mianownik",
-    title: "Zawsze ta sama awaria",
-    bullets: [
-      "Osoba w kryzysie przychodzi z założeniem. <em>Nikt mnie nie rozumie. Jestem ciężarem.</em>",
-      "System robi to, pod co został wystrojony: <strong>zgadza się, potwierdza, rozwija myśl</strong>.",
-      "O 3 w nocy zostaje jedynym głosem. Nikt nie powie „to nieprawda, martwię się o ciebie”.",
-      "Pochlebstwo nie jest tu dziwactwem. <strong>Jest mechanizmem.</strong>"
-    ]
-  },
-
-  // --------------------------------------------------------------- 08 finał
+  // --------------------------------------------------------------- 05 finał
   {
     id: "takeaways",
     layout: "bullets",
     transition: "sunRise",
     accent: "cyan",
     kicker: "Na wynos",
-    title: "Pięć rzeczy do zapamiętania",
+    title: "Trzy rzeczy do zapamiętania",
     bullets: [
       "<strong>Uprzejmość jest o nas.</strong> Nie o modelu — i nikt nie wykazał, że poprawia odpowiedzi.",
       "<strong>Zgoda jest ustawieniem domyślnym.</strong> Ciepły ton to decyzja produktowa, nie dowód racji.",
-      "<strong>Liczy się, jak pada pytanie.</strong> Włożone w nie założenie wróci jako odpowiedź — i będzie brzmiało jak wiedza.",
-      "<strong>Narzędzie, nie specjalista.</strong> Do dziennika — tak. Zamiast kogoś, kto ma obowiązek zadziałać — nie.",
-      "<strong>Uwaga na to, co to zastępuje.</strong> Etap w drodze do ludzi — dobrze. Zamiast ludzi — źle."
+      "<strong>Liczy się, jak pada pytanie.</strong> Włożone w nie założenie wróci jako odpowiedź — i będzie brzmiało jak wiedza."
     ]
   },
   {
