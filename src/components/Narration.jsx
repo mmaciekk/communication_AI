@@ -1,8 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import narration from '../narration.json'
 
-const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, '0')}`
-
 function SpeakerIcon() {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -103,7 +101,6 @@ export default function Narration({ index, accent, enabled = true }) {
       title="N — narracja"
     >
       <span className="narration__icon">{playing ? <PauseIcon /> : <SpeakerIcon />}</span>
-      <span className="narration__time">{fmt(Math.max(0, total - elapsed))}</span>
       <span className="narration__bar">
         <span className="narration__bar-fill" style={{ transform: `scaleX(${ratio})` }} />
       </span>

@@ -562,11 +562,6 @@ body {
   display: block;
 }
 
-.narration__time {
-  min-width: 3ch;
-  font-variant-numeric: tabular-nums;
-}
-
 /* Cienki pasek postępu wzdłuż dolnej krawędzi przycisku. */
 .narration__bar {
   position: absolute;
