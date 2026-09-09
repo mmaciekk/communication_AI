@@ -56,11 +56,7 @@ czyta litera po literze i wychodzi z tego „a-i”. Tam, gdzie da się użyć �
 
 _[to czyta lektor / głos ej aj — nie mówca]_
 
-Maciej boi się wystąpień publicznych. Od zawsze, konsekwentnie i całkiem poważnie.
-
-_[pauza]_
-
-Więc tak naprawdę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego głosem złożonym z próbki nagrania. Tekst jest jego. Struny głosowe są moje.
+Dzień dobry, jestem Mać ej aj i przedstawię dla was prezentację. Tak, dobrze usłyszeliście. Mać ej aj. Nigdy się nie zacinam i uwielbiam wystąpienia publiczne.
 
 **Przejście:** _(oddaj głos mówcy)_
 
@@ -70,7 +66,7 @@ Więc tak naprawdę nie musi nic mówić. Nazywam się Mać-ej-aj i jestem jego 
 
 > **Na ekranie:** tytuł
 
-Dzień dobry. Od dwóch lat wszyscy uczymy się jednej rzeczy: jak pisać do sztucznej inteligencji. Prompty, kursy, poradniki, „jak zapytać, żeby dostać lepszą odpowiedź”.
+Od dwóch lat wszyscy uczymy się jednej rzeczy: jak pisać do sztucznej inteligencji. Prompty, kursy, poradniki, „jak zapytać, żeby dostać lepszą odpowiedź”.
 
 Prawie nikt nie zadał pytania odwrotnego. co odpowiedzi AI robią z nami?
 

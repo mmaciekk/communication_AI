@@ -28,6 +28,7 @@ export default function Deck() {
   const [overview, setOverview] = useState(false)
   const [idle, setIdle] = useState(false)
   const [autopilot, setAutopilot] = useState(false)
+  const [autopilotStarting, setAutopilotStarting] = useState(false)
   const [paused, setPaused] = useState(false)
   const reduced = usePrefersReducedMotion()
 
@@ -73,6 +74,26 @@ export default function Deck() {
   const cancelAutopilot = useCallback(() => {
     setAutopilot(false)
     setPaused(false)
+  }, [])
+
+  // "HELP ME" najpierw puszcza wstęp głosem ej aj (narracja "0" w mowa.md —
+  // nie ma odpowiednika w slides.js, bo gra przed pierwszym prawdziwym
+  // slajdem), a dopiero po nim rusza zwykły autopilot od slajdu 0.
+  const startAutopilot = useCallback(() => {
+    const intro = narration['0']
+    if (!intro) {
+      setAutopilot(true)
+      return
+    }
+    setAutopilotStarting(true)
+    const audio = new Audio(intro.src)
+    const finish = () => {
+      setAutopilotStarting(false)
+      setAutopilot(true)
+    }
+    audio.addEventListener('ended', finish, { once: true })
+    audio.addEventListener('error', finish, { once: true })
+    audio.play().catch(finish)
   }, [])
 
   useEffect(() => {
@@ -302,7 +323,11 @@ export default function Deck() {
       ) : (
         <Narration index={index} accent={slide.accent} enabled={!overview} />
       )}
-      <Autopilot index={index} active={autopilot} onStart={() => setAutopilot(true)} />
+      <Autopilot
+        index={index}
+        active={autopilot || autopilotStarting}
+        onStart={startAutopilot}
+      />
       <div className={`hint${idle ? ' hint--hidden' : ''}`}>
         ← → NAVIGATE · N NARRATION · O OVERVIEW · F FULLSCREEN
       </div>
