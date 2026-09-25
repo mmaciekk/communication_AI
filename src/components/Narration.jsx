@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import narration from '../narration.json'
+import { speak } from '../speech'
 
 function SpeakerIcon() {
   return (
@@ -42,7 +43,7 @@ export default function Narration({ index, accent, enabled = true }) {
       return undefined
     }
 
-    const audio = new Audio(entry.src)
+    const audio = speak(new Audio(entry.src))
     audio.preload = 'auto'
     audioRef.current = audio
 

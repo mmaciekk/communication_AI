@@ -692,3 +692,69 @@ body {
     transition-duration: 0.05s !important;
   }
 }
+
+/* ---------------------------------------------------------- talking head */
+
+/* Kukiełka: pełne zdjęcie w tle, na nim ciemne wnętrze ust i druga kopia
+   zdjęcia przycięta do brody, zjeżdżająca w dół o `--jaw` (0..1, ustawiane
+   z TalkingHead.jsx). Linia ust leży na 66.6% wysokości zdjęcia, środek ust
+   na ~27% szerokości. */
+.head {
+  position: absolute;
+  right: calc(var(--pad-x) * 0.5);
+  bottom: 3.2rem;
+  z-index: 41;
+  width: clamp(110px, 11vw, 190px);
+  pointer-events: none;
+  filter: drop-shadow(0 0 18px color-mix(in srgb, var(--accent) 45%, transparent));
+}
+
+.head__rig {
+  --jaw: 0;
+  position: relative;
+  aspect-ratio: 346 / 500;
+  transform-origin: 50% 90%;
+  transform: rotate(calc(var(--jaw) * -1.2deg)) translateY(calc(var(--jaw) * -1%));
+  -webkit-mask-image: radial-gradient(ellipse 62% 54% at 44% 50%, #000 70%, transparent 100%);
+  mask-image: radial-gradient(ellipse 62% 54% at 44% 50%, #000 70%, transparent 100%);
+}
+
+.head--still .head__rig {
+  transform: none;
+}
+
+.head__base,
+.head__jaw {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.head__mouth {
+  position: absolute;
+  left: 17%;
+  top: 66.2%;
+  width: 21%;
+  height: 4.4%;
+  border-radius: 40% 40% 50% 50% / 30% 30% 70% 70%;
+  background: radial-gradient(ellipse 60% 80% at 50% 20%, #3a1540 0%, #14061f 55%, #050109 100%);
+  filter: blur(0.6px);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.8);
+  transform-origin: 50% 0;
+  transform: scaleY(var(--jaw));
+}
+
+.head__jaw {
+  transform: translateY(calc(var(--jaw) * 4%));
+  /* Twarda krawędź na linii ust, miękkie boki i dół — szew ginie w brodzie. */
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 66.6%, #000 66.6%),
+    radial-gradient(ellipse 34% 22% at 28% 74%, #000 55%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 66.6%, #000 66.6%),
+    radial-gradient(ellipse 34% 22% at 28% 74%, #000 55%, transparent 100%);
+  mask-composite: intersect;
+}

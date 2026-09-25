@@ -7,8 +7,10 @@ import Narration from './components/Narration'
 import Overview from './components/Overview'
 import Progress from './components/Progress'
 import Slide from './components/Slide'
+import TalkingHead from './components/TalkingHead'
 import narration from './narration.json'
 import { slides } from './slides'
+import { speak } from './speech'
 import { DEFAULT_TRANSITION, resolveVariants, usePrefersReducedMotion } from './transitions'
 
 const DWELL_MS = 5000
@@ -86,7 +88,7 @@ export default function Deck() {
       return
     }
     setAutopilotStarting(true)
-    const audio = new Audio(intro.src)
+    const audio = speak(new Audio(intro.src))
     const finish = () => {
       setAutopilotStarting(false)
       setAutopilot(true)
@@ -114,7 +116,7 @@ export default function Deck() {
     const entry = narration[String(index + 1)]
 
     if (entry) {
-      const audio = new Audio(entry.src)
+      const audio = speak(new Audio(entry.src))
       audioRef.current = audio
       const onEnd = () => advanceRef.current()
       audio.addEventListener('ended', onEnd)
@@ -156,7 +158,7 @@ export default function Deck() {
         dwellRef.current.timer = setTimeout(() => advanceRef.current(), dwellRef.current.remaining)
       }
     }
-    const phrase = new Audio('/audio/resume.mp3')
+    const phrase = speak(new Audio('audio/resume.mp3'))
     phrase.addEventListener('ended', continuePlayback)
     phrase.addEventListener('error', continuePlayback)
     phrase.play().catch(continuePlayback)
@@ -313,6 +315,7 @@ export default function Deck() {
       </div>
 
       <Progress index={index} total={slides.length} />
+      <TalkingHead hidden={overview} />
       {autopilot ? (
         <AutopilotControls
           accent={slide.accent}
