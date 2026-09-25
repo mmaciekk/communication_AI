@@ -20,7 +20,7 @@ głosem (XTTS-v2, lokalnie, bez API) na podstawie `mowa.md`. Szczegóły:
 
 ```bash
 npm install
-npm run dev       # dev server na porcie 2137
+npm run dev       # dev server na porcie 1234
 npm run build     # build produkcyjny do dist/
 npm run preview   # podgląd builda
 npm run narrate    # regeneracja narracji głosowej (patrz tools/voice)
